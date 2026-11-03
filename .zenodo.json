@@ -1,0 +1,145 @@
+{
+  "title": "Entropy contraction on complete bipartite graphs via reverse erasure: only the rarest symbol matters",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "<p><strong>Unrefereed research candidate.</strong> In one sentence: for the Bayesian reverse of an erasure channel, the worst-case loss of relative entropy depends on the prior only through its rarest symbol, and this settles a conjecture of Caputo, Chen, Gu and Polyanskiy on the half-lazy random walk on complete bipartite graphs.</p><p>Caputo, Chen, Gu and Polyanskiy (Electronic Journal of Probability, 2025) conjectured that one step of the half-lazy random walk on the complete bipartite graph K<sub>n,n</sub> shrinks relative entropy by at most the factor log n / (2 log 2n), with single vertices as the only worst starting points; they proved the case n = 3 with computer assistance. This paper proves the conjecture for every n, and for K<sub>m,n</sub> with M = max(m, n) in place of n. The key observation is that one step of this walk splits into two copies of the reverse-erasure channel: keep the current symbol with probability &alpha;, otherwise replace it by a fresh draw from a prior &rho;. For this channel the relative-entropy contraction coefficient depends on the prior only through its smallest atom q, at every retention probability. Up to the sharp threshold &alpha; = q<sup>q/(1-q)</sup> the coefficient is log(1/q) / log(1/(&alpha;q)), a translation of a weighted mean inequality of Gao (credited); above the threshold the worst inputs become full-support exponential tilts and no closed form is given. The uniform binary case is known (Nair and Wang; Zhao). Further consequences: a rank-one weighted bipartite extension, which also settles a numerical observation of Jadhav (2026) on the lazy star; a reduction of any block-reset chain (any laziness, all powers, stars, multipartite graphs) to a chain with at most two states per block, whose values are computed numerically; and the exact one-way communication rate for agreement distillation below the threshold. There is no mixing-time improvement: the spectral gap of the walk is 1/2.</p><p>The archive contains the manuscript (LaTeX source, bibliography and PDF), the figure and its script, four verification scripts (random-sample suite, minimum-mass diagnostics, ten must-fail negative controls with near-extremiser families, and block-reset extension checks with five must-fail controls) with recorded outputs in normal and optimised Python modes, exact small-kernel fingerprints, the dated prior-art gate and audit, raw registry records for every reference, a rating-free internal review summary, development notes, CI and SHA-256 sums. Assurance: written proofs; numerical diagnostics are evidence, not proofs; point-optimality windows for other laziness values are numerical; internal AI-assisted review only (not peer review, independent reproduction or formal verification); priority rests on a bounded literature search. Creator: Anonymous. Text, data and figures CC0-1.0; code MIT.</p>",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-zero",
+  "version": "0.1.0-candidate",
+  "publication_date": "2026-11-03",
+  "keywords": [
+    "entropy contraction",
+    "strong data processing inequality",
+    "relative entropy",
+    "contraction coefficient",
+    "reverse erasure channel",
+    "Markov chains",
+    "complete bipartite graph",
+    "weighted means",
+    "agreement distillation"
+  ],
+  "notes": "Code (the .py files and the CI workflow) is MIT; prose, manuscript, figures and data are CC0-1.0. Registry records in refs_records/ remain subject to the terms of their services.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/reverse-erasure-entropy-contraction/tree/v0.1.0-candidate",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://evidencepress.org/releases/reverse-erasure-entropy-contraction/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1214/25-EJP1372",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1155/S0161171203210279",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1155/2009/468290",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1017/S0305004100036963",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1109/ISIT.2016.7541363",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1109/TIT.2021.3130189",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1109/TIT.2016.2549542",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.3390/e22010039",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/s00220-023-04851-1",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.4230/LIPIcs.CCC.2016.6",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1109/TIT.2011.2134067",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1214/aop/1176995937",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/978-1-4939-7005-6_7",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1134/S0032946020020015",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "arXiv:1304.6133",
+      "relation": "references",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "arXiv:1411.3575",
+      "relation": "references",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "arXiv:1807.06290",
+      "relation": "references",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "arXiv:2005.05444",
+      "relation": "references",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "arXiv:2202.06386",
+      "relation": "references",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "arXiv:2409.07689",
+      "relation": "references",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "arXiv:2606.27073",
+      "relation": "references",
+      "scheme": "arxiv"
+    }
+  ],
+  "doi": "10.5281/zenodo.23921825"
+}

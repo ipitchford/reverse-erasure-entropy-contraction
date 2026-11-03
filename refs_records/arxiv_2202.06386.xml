@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/lMgaqp5brYLNFIXBhR3IbCBZPag</id>
+  <title>arXiv Query: search_query=&amp;id_list=2202.06386&amp;start=0&amp;max_results=10</title>
+  <updated>2026-11-03T13:28:59Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2202.06386" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2202.06386v1</id>
+    <title>Improved analysis for a proximal algorithm for sampling</title>
+    <updated>2022-02-13T19:04:28Z</updated>
+    <link href="https://arxiv.org/abs/2202.06386v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2202.06386v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study the proximal sampler of Lee, Shen, and Tian (2021) and obtain new convergence guarantees under weaker assumptions than strong log-concavity: namely, our results hold for (1) weakly log-concave targets, and (2) targets satisfying isoperimetric assumptions which allow for non-log-concavity. We demonstrate our results by obtaining new state-of-the-art sampling guarantees for several classes of target distributions. We also strengthen the connection between the proximal sampler and the proximal method in optimization by interpreting the proximal sampler as an entropically regularized Wasserstein proximal method, and the proximal point method as the limit of the proximal sampler with vanishing noise.</summary>
+    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-02-13T19:04:28Z</published>
+    <arxiv:comment>34 pages</arxiv:comment>
+    <arxiv:primary_category term="math.ST"/>
+    <author>
+      <name>Yongxin Chen</name>
+    </author>
+    <author>
+      <name>Sinho Chewi</name>
+    </author>
+    <author>
+      <name>Adil Salim</name>
+    </author>
+    <author>
+      <name>Andre Wibisono</name>
+    </author>
+  </entry>
+</feed>

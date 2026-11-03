@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/mH+k/arddRg9FMSmjgmP90IWKmc</id>
+  <title>arXiv Query: search_query=&amp;id_list=2606.27073&amp;start=0&amp;max_results=10</title>
+  <updated>2026-11-03T12:59:21Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2606.27073" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2606.27073v1</id>
+    <title>Retention Profiles and KL Contraction Bounds in Finite Markov Chains</title>
+    <updated>2026-06-25T14:15:59Z</updated>
+    <link href="https://arxiv.org/abs/2606.27073v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.27073v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study Kullback-Leibler (KL) contraction in finite Markov chains through a row-wise perspective. Evaluating the SDPI ratio at point masses yields a state-indexed retention profile $r(x)=D_{\mathrm{KL}}(P(x,\cdot)\|π)/\log(1/π(x))$ and a localization ratio $L(P)=\bar r_π/M\in[0,1]$ (with $M=\max_x r(x)$, $\bar r_π=\mathbb{E}_πr$) that distinguishes localized from global contraction obstructions. Our main contributions are (i) a convexity-gap identity showing that the gap between the row-averaged divergence and $D_{\mathrm{KL}}(μP\|π)$ equals the mutual information $I_μ(X;Y)$, and a derived decomposition of the contraction ratio into entropy inflation and a mutual-information penalty; (ii) a Cheeger-type lower bound on $M$, tying the bottleneck geometry of $P$ directly to the row-retention profile; (iii) an explicit construction proving that $L(P_n)\to 0$ does not force $η_{\mathrm{KL}}(P_n)/M_n\to 1$, identifying cardinality of high-retention states (not their $π$-mass) as the decisive quantity. Alongside these, we record structural consequences, optimal Markov/reverse-Markov tail bounds for $r$, a Bhatia-Davis variance bound, two-sided spectral bounds with an explicit cubic correction, a KL/Pinsker mixing-time bound, and tensorization for product chains. We further show that $L(P)$ is structurally decoupled from the spectral gap, the Cheeger constant, and the mixing time: every vertex-transitive chain satisfies $L(P)=1$ regardless of its mixing speed, and the empirical rank correlations between $L(P)$ and these classical invariants on a diverse but limited test suite are essentially zero. The numerical experiments are exploratory and not used as evidence for a universal classification theorem.</summary>
+    <category term="math.PR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-25T14:15:59Z</published>
+    <arxiv:comment>29 pages, no figures</arxiv:comment>
+    <arxiv:primary_category term="math.PR"/>
+    <author>
+      <name>Saurav Jadhav</name>
+    </author>
+  </entry>
+</feed>

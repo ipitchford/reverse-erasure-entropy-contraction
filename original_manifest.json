@@ -1,0 +1,92 @@
+{
+  "date": "2026-11-01",
+  "purpose": "Untouched development-source and verification-output preservation; final manuscript supersedes early formulations.",
+  "files": [
+    {
+      "original_workspace_path": "research/entropy_draft.md",
+      "preserved_as": "development_notes/uniform_working_draft.md",
+      "sha256": "20dfa2d0aef1d24d5484f4c5aca4de230375e14bb67ba5900a92c65771c5184c",
+      "bytes": 30181
+    },
+    {
+      "original_workspace_path": "entropy_audit/weighted_extension.md",
+      "preserved_as": "development_notes/weighted_extension.md",
+      "sha256": "625e24b9a89c822a097608efc0240ab80124979fd2bfa18d78608b18ccee97dd",
+      "bytes": 12434
+    },
+    {
+      "original_workspace_path": "entropy_audit/independent_audit.md",
+      "preserved_as": "development_notes/independent_audit.md",
+      "sha256": "03196cf950c368d15c28c4b4b619c987db187fac0de0f7e1c772a1d1efc569aa",
+      "bytes": 7802
+    },
+    {
+      "original_workspace_path": "research/rarest_branch.md",
+      "preserved_as": "development_notes/rarest_branch.md",
+      "sha256": "40044384c837457749c32c93a75e305a7ed218554750cfb536674cb2118ccf4d",
+      "bytes": 11074
+    },
+    {
+      "original_workspace_path": "research/agreement_application.md",
+      "preserved_as": "development_notes/agreement_application.md",
+      "sha256": "1894256bb5dd7c38f0c816c23607055ff2ca029eaeca15196a4cad2e8f5388b4",
+      "bytes": 13402
+    },
+    {
+      "original_workspace_path": "research/sci_candidate.md",
+      "preserved_as": "development_notes/secondary_sci_candidate.md",
+      "sha256": "3b57af8219c97a96715ad289202fe2effa47d0d9203177e1c96624e584bf7eb7",
+      "bytes": 5728
+    },
+    {
+      "original_workspace_path": "research/entropy_novelty.md",
+      "preserved_as": "novelty_audit.md",
+      "sha256": "a587ea9ffd3e3a04961f17cd284df1d083ef0be1068fe49a254e8efa1e50eb9d",
+      "bytes": 23674
+    },
+    {
+      "original_workspace_path": "research/validate_entropy.py",
+      "preserved_as": "verification/validate_entropy.py",
+      "sha256": "a60ab8b3aad0806f58b46140cd59f59439b1582f82bf75663e79312995e0d187",
+      "bytes": 10561
+    },
+    {
+      "original_workspace_path": "research/validation_results.json",
+      "preserved_as": "verification/validation_results.json",
+      "sha256": "69bf21acc5075633502638f14cc373f31a0dcf08960804605177331aab4ed539",
+      "bytes": 21297
+    },
+    {
+      "original_workspace_path": "entropy_audit/reviewer_validation_results.json",
+      "preserved_as": "verification/reviewer_validation_results.json",
+      "sha256": "929c5a3fb457293b80aa6b5f0e9be7dd1eab06a9cd3806f8e04c8a3b7d7e387e",
+      "bytes": 21298
+    },
+    {
+      "original_workspace_path": "entropy_audit/reviewer_scalar_checks.json",
+      "preserved_as": "verification/reviewer_scalar_checks.json",
+      "sha256": "e6a7d481560c013a49edde9f82448ee79de7cd2f88af5878d19aaffed37707b5",
+      "bytes": 3410
+    }
+  ],
+  "revision_2026_11_03": {
+    "note": "The sha256 values above are those of the 1 November 2026 originals. The public package of 3 November 2026 differs as listed here; the originals remain in the private development record.",
+    "removed_from_public_package": [
+      "development_notes/secondary_sci_candidate.md (separate, unreviewed topic)"
+    ],
+    "moved": {
+      "verification/validation_results.json": "verification/results/2026-11-01_original/validation_results.json",
+      "verification/reviewer_validation_results.json": "verification/results/2026-11-01_original/reviewer_validation_results.json",
+      "verification/reviewer_scalar_checks.json": "verification/results/2026-11-01_original/reviewer_scalar_checks.json",
+      "verification/minimum_mass_results.json (not in the list above)": "verification/results/2026-11-01_original/minimum_mass_results.json"
+    },
+    "rewritten": [
+      "verification/validate_entropy.py (assert-free failure handling, --output-dir, refuse overwrite, own SHA-256; same checks and random stream)"
+    ],
+    "edited_text": [
+      "development_notes/uniform_working_draft.md: one closing sentence reworded (removed a reference to an assessment framework)",
+      "development_notes/weighted_extension.md: citation formatting only",
+      "novelty_audit.md: bold markup removed in two places; revision addendum appended"
+    ]
+  }
+}

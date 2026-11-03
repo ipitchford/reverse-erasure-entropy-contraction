@@ -1,0 +1,9 @@
+{
+  "output_file": "negative_controls_results.json",
+  "status": "all controls detected and all structured families passed (numerical evidence only; not a proof)",
+  "gates_evaluated": 56,
+  "controls": 10,
+  "detected": 10,
+  "random_sampler_would_detect": 3,
+  "elapsed_seconds": 21.24323454200203
+}

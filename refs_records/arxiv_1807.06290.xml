@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/Xorl5KJ7E+fSMkO39641sVlb5WY</id>
+  <title>arXiv Query: search_query=&amp;id_list=1807.06290&amp;start=0&amp;max_results=10</title>
+  <updated>2026-11-03T13:08:23Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=1807.06290" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/1807.06290v1</id>
+    <title>Some extensions of Diananda's inequality</title>
+    <updated>2018-07-17T09:09:32Z</updated>
+    <link href="https://arxiv.org/abs/1807.06290v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1807.06290v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Let $M_{n,r}=(\sum_{i=1}^{n}q_ix_i^r)^{\frac {1}{r}}, r \neq 0$ and $M_{n,0}=\lim_{r \rightarrow 0}M_{n,r}$ be the weighted power means of $n$ non-negative numbers $x_i$ with $q_i &gt; 0$ satisfying $\sum^n_{i=1}q_i=1$. For a real number $α$ and mutually distinct real numbers $r, s, t$, we define \begin{align*}
+  Δ_{r,s,t,α}=\Big | \frac {M^α_{n,r}-M^α_{n,t}}{M^α_{n,r}-M^α_{n,s}}\Big |. \end{align*}
+  A result of Diananda gives sharp bounds of $Δ_{1, 1/2, 0, 1}$ in terms of functions of $q$ only, where $q=\min q_i$. In this paper, we prove similar sharp bounds of $Δ_{r,s,t,α}$ for certain parameters $r, s, t, α$.</summary>
+    <category term="math.CA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-07-17T09:09:32Z</published>
+    <arxiv:comment>11 pages</arxiv:comment>
+    <arxiv:primary_category term="math.CA"/>
+    <author>
+      <name>Peng Gao</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate by its DOI."
+title: "Entropy contraction on complete bipartite graphs via reverse erasure: only the rarest symbol matters"
+type: software
+authors:
+  - name: Anonymous
+version: 0.1.0-candidate
+doi: 10.5281/zenodo.23921825
+date-released: 2026-11-03
+repository-code: "https://github.com/ipitchford/reverse-erasure-entropy-contraction"
+url: "https://evidencepress.org/releases/reverse-erasure-entropy-contraction/"
+license:
+  - CC0-1.0
+  - MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23921825
+    description: "Version DOI (0.1.0-candidate)"
+  - type: doi
+    value: 10.5281/zenodo.23921824
+    description: "Concept DOI (all versions)"
+keywords:
+  - entropy contraction
+  - strong data processing inequality
+  - reverse erasure channel
+  - Markov chains
+  - complete bipartite graph
+abstract: "Caputo, Chen, Gu and Polyanskiy (2025) conjectured that one step of the half-lazy random walk on the complete bipartite graph K_(n,n) shrinks relative entropy by at most the factor log n / (2 log 2n), with single vertices as the only worst starts; they proved n = 3 by computer. This package proves the conjecture for every n, and for K_(m,n) with M = max(m,n), by writing one step of the walk as two copies of the reverse-erasure channel (keep the symbol with probability alpha, otherwise redraw it from a prior). For that channel the relative-entropy contraction coefficient depends on the prior only through its smallest atom q, at every alpha, and equals log(1/q)/log(1/(alpha q)) up to the sharp threshold alpha = q^(q/(1-q)); the upper bound is a translation of Gao's weighted mean inequality and the uniform binary case is known. Further results: a rank-one weighted extension (settling the lazy-star observation of Jadhav 2026), a reduction of block-reset chains to at most two states per block, and the exact one-way agreement-distillation rate below the threshold. Unrefereed candidate; internal AI-assisted review only. Text, data and figures CC0-1.0; code MIT."

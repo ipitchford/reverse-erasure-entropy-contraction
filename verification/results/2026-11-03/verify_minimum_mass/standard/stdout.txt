@@ -1,0 +1,16 @@
+{
+  "output_file": "minimum_mass_results.json",
+  "status": "finite diagnostics passed",
+  "envelope_cases": 256,
+  "moment_comparisons": 896,
+  "envelope_case_classes": {
+    "informative_finite_branch": 143,
+    "vacuous_both_zero": 111,
+    "heavier_fixed_by_vertex": 2
+  },
+  "largest_envelope_excess_informative": -0.00564515350527017,
+  "largest_envelope_excess": 1.1671988740767236e-16,
+  "largest_moment_excess": -5.021896237078494e-06,
+  "max_log_arithmetic_error": 9.56179579958416e-15,
+  "max_log_geometric_error": 2.824407374646398e-13
+}

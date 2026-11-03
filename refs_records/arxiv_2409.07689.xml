@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/JExC8pZr5c8Hk1Z3PfKYafrkMh8</id>
+  <title>arXiv Query: search_query=&amp;id_list=2409.07689&amp;start=0&amp;max_results=10</title>
+  <updated>2026-11-03T13:00:23Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2409.07689" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2409.07689v1</id>
+    <title>Entropy Contractions in Markov Chains: Half-Step, Full-Step and Continuous-Time</title>
+    <updated>2024-09-12T01:46:41Z</updated>
+    <link href="https://arxiv.org/abs/2409.07689v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.07689v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper considers the speed of convergence (mixing) of a finite Markov kernel $P$ with respect to the Kullback-Leibler divergence (entropy). Given a Markov kernel one defines either a discrete-time Markov chain (with the $n$-step transition kernel given by the matrix power $P^n$) or a continuous-time Markov process (with the time-$t$ transition kernel given by $e^{t(P-\mathrm{Id})}$). The contraction of entropy for $n=1$ or $t=0+$ are characterized by the famous functional inequalities, the strong data processing inequality (SDPI) and the modified log-Sobolev inequality (MLSI), respectively. When $P=KK^*$ is written as the product of a kernel and its adjoint, one could also consider the ``half-step'' contraction, which is the SDPI for $K$, while the ``full-step'' contraction refers to the SDPI for $P$. The work [DMLM03] claimed that these contraction coefficients (half-step, full-step, and continuous-time) are generally within a constant factor of each other. We disprove this and related conjectures by working out a number of different counterexamples. In particular, we construct (a) a continuous-time Markov process that contracts arbitrarily faster than its discrete-time counterpart; and (b) a kernel $P$ such that $P^{m+1}$ contracts arbitrarily better than $P^m$. Hence, our main conclusion is that the four standard inequalities comparing five common notions of entropy and variance contraction are generally not improvable.
+  In the process of analyzing the counterexamples, we survey and sharpen the tools for bounding the contraction coefficients and characterize properties of extremizers of the respective functional inequalities. As our examples range from Bernoulli-Laplace model, random walks on graphs, to birth-death chains, the paper is also intended as a tutorial on computing MLSI, SDPI and other constants for these types of commonly occurring Markov chains.</summary>
+    <category term="math.PR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-12T01:46:41Z</published>
+    <arxiv:primary_category term="math.PR"/>
+    <author>
+      <name>Pietro Caputo</name>
+    </author>
+    <author>
+      <name>Zongchen Chen</name>
+    </author>
+    <author>
+      <name>Yuzhou Gu</name>
+    </author>
+    <author>
+      <name>Yury Polyanskiy</name>
+    </author>
+  </entry>
+</feed>

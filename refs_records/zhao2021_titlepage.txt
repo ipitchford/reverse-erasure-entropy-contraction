@@ -1,0 +1,20 @@
+                   Generalizations and Applications of
+                Hypercontractivity and Small-Set Expansion
+                                                    Yu Zhao
+                                               CMU-CS-21-137
+                                               August 26, 2021
+
+
+
+
+                                        Computer Science Department
+                                         School of Computer Science
+                                         Carnegie Mellon University
+                                            Pittsburgh, PA 15213
+
+                                           Thesis Committee:
+                                         Ryan O’Donnell (Chair)
+                                             Anupam Gupta
+                                          Venkatesan Guruswami
+                                   Rocco Servedio (Columbia University)
+

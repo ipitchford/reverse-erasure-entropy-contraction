@@ -1,0 +1,257 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 3 November 2026 for release 0.1.0-candidate from the dated prior-art record (novelty_gate_report.md and novelty_audit.md, 1 November 2026, with 3 November addenda), the internal review searches of 3 November 2026 (REVIEW_SUMMARY.md) and the reference retrieval (refs_records/). It documents the scrutiny performed, not historical priority. No new search was run at release preparation.",
+ "contributionMap": [
+  {
+   "claim": "The relative-entropy contraction coefficient of the reverse-erasure channel depends on the prior only through its smallest atom q, at every retention probability alpha (Theorem 2.3), with an exact one-variable criterion (Proposition 2.4).",
+   "unit": "statement",
+   "paperLocation": "Theorem 2.3, Proposition 2.4, Section 3",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "two live web indexes, arXiv, primary author manuscripts, RGMIA, university thesis and repository sources, publisher and institutional metadata (novelty_gate_report.md Section 5; novelty_audit.md)",
+     "query": "complete bipartite entropy contraction log n / log 2n; Diananda, Gao, power/arithmetic/geometric means; reverse erasure, Bayesian inverse, SDPI, non-uniform priors; minimum probability, log(1/q), q^(q/(1-q)); fixed arithmetic/geometric means, minimum weight; reverse BEC, agreement distillation"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "internal reviewers during review: arXiv abstract queries, web indexes, OpenAlex citers of Caputo et al. 2025 (novelty_gate_report.md Section 11; novelty_audit.md addendum; REVIEW_SUMMARY.md)",
+     "query": "citers of Caputo-Chen-Gu-Polyanskiy 2025; lazy star KL contraction; one-large-coordinate reductions; agreement distillation reverse erasure"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "api.crossref.org, api.datacite.org and the arXiv API (refs_records/)",
+     "query": "registry records for every bibliography entry (refs.bib)"
+    }
+   ],
+   "closestPriorWork": "Gao 2018 (fixed endpoint coefficients, no free-alpha reduction); Ordentlich and Polyanskiy 2022 (reference-optimised coefficient, a different domain); Gu and Polyanskiy 2023 Proposition 17 (one-large-coordinate idea in primal form)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "For alpha <= q^(q/(1-q)) the coefficient equals log(1/q)/log(1/(alpha q)), attained only at a rarest point input, and the threshold is sharp (Theorem 2.5).",
+   "unit": "statement",
+   "paperLocation": "Theorem 2.5, Section 4",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "two live web indexes, arXiv, primary author manuscripts, RGMIA, university thesis and repository sources, publisher and institutional metadata (novelty_gate_report.md Section 5; novelty_audit.md)",
+     "query": "complete bipartite entropy contraction log n / log 2n; Diananda, Gao, power/arithmetic/geometric means; reverse erasure, Bayesian inverse, SDPI, non-uniform priors; minimum probability, log(1/q), q^(q/(1-q)); fixed arithmetic/geometric means, minimum weight; reverse BEC, agreement distillation"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "internal reviewers during review: arXiv abstract queries, web indexes, OpenAlex citers of Caputo et al. 2025 (novelty_gate_report.md Section 11; novelty_audit.md addendum; REVIEW_SUMMARY.md)",
+     "query": "citers of Caputo-Chen-Gu-Polyanskiy 2025; lazy star KL contraction; one-large-coordinate reductions; agreement distillation reverse erasure"
+    }
+   ],
+   "closestPriorWork": "Gao 2003 Theorem 3.1 and Gao 2009 Theorem 1.2 (the weighted mean inequality that gives the upper bound); Nair and Wang 2016 and Zhao 2021 (uniform binary coefficient)",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Local coefficient alpha; above the threshold the worst inputs are full-support exponential tilts determined by a tangency system (Proposition 2.6, Theorem 2.7).",
+   "unit": "statement",
+   "paperLocation": "Section 5",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "two live web indexes, arXiv, primary author manuscripts, RGMIA, university thesis and repository sources, publisher and institutional metadata (novelty_gate_report.md Section 5; novelty_audit.md)",
+     "query": "complete bipartite entropy contraction log n / log 2n; Diananda, Gao, power/arithmetic/geometric means; reverse erasure, Bayesian inverse, SDPI, non-uniform priors; minimum probability, log(1/q), q^(q/(1-q)); fixed arithmetic/geometric means, minimum weight; reverse BEC, agreement distillation"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "internal reviewers during review: arXiv abstract queries, web indexes, OpenAlex citers of Caputo et al. 2025 (novelty_gate_report.md Section 11; novelty_audit.md addendum; REVIEW_SUMMARY.md)",
+     "query": "citers of Caputo-Chen-Gu-Polyanskiy 2025; lazy star KL contraction; one-large-coordinate reductions; agreement distillation reverse erasure"
+    }
+   ],
+   "closestPriorWork": "Standard entropy duality and exponential-tilt arguments; no general-prior statement found",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "The half-lazy random walk on K_{m,n} has entropy contraction coefficient log M/(2 log 2M), M = max(m, n), with only point extremisers for M >= 3; rank-one weights; lazy star (Theorem 6.1, Corollary 6.2). This proves the conjecture of Caputo, Chen, Gu and Polyanskiy.",
+   "unit": "statement",
+   "paperLocation": "Theorem 6.1, Corollary 6.2, Section 6",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "two live web indexes, arXiv, primary author manuscripts, RGMIA, university thesis and repository sources, publisher and institutional metadata (novelty_gate_report.md Section 5; novelty_audit.md)",
+     "query": "complete bipartite entropy contraction log n / log 2n; Diananda, Gao, power/arithmetic/geometric means; reverse erasure, Bayesian inverse, SDPI, non-uniform priors; minimum probability, log(1/q), q^(q/(1-q)); fixed arithmetic/geometric means, minimum weight; reverse BEC, agreement distillation"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "internal reviewers during review: arXiv abstract queries, web indexes, OpenAlex citers of Caputo et al. 2025 (novelty_gate_report.md Section 11; novelty_audit.md addendum; REVIEW_SUMMARY.md)",
+     "query": "citers of Caputo-Chen-Gu-Polyanskiy 2025; lazy star KL contraction; one-large-coordinate reductions; agreement distillation reverse erasure"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "api.crossref.org, api.datacite.org and the arXiv API (refs_records/)",
+     "query": "registry records for every bibliography entry (refs.bib)"
+    }
+   ],
+   "closestPriorWork": "Caputo, Chen, Gu and Polyanskiy 2025 (conjecture, Example 4.4 and Proposition 4.5, n = 3 by computer); Jadhav 2026 (lazy star numerical observation)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "The coefficient of any block-reset chain equals that of a chain with at most two states per block (laziness, powers, stars, multipartite graphs); values there are computed numerically (Theorem 7.4, Corollaries 7.6 and 7.9, Proposition 7.10).",
+   "unit": "statement",
+   "paperLocation": "Section 7",
+   "searches": [
+    {
+     "date": "2026-11-03",
+     "corpus": "arXiv, web indexes and the internal review literature check (REVIEW_SUMMARY.md; novelty_audit.md addendum)",
+     "query": "block-reset chains, rank-one reset, collapsing to two states per block, lazy walks and powers of reset chains, down-up samplers, KL contraction"
+    }
+   ],
+   "closestPriorWork": "None found that performs the collapse; Caputo et al. 2025 and Jadhav 2026 treat specific chains numerically or by computer",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Below the threshold the exact one-way agreement-distillation rate is log(1/alpha)/log(1/(alpha q)) when the party holding the erased copy speaks (Corollary 8.1).",
+   "unit": "statement",
+   "paperLocation": "Section 8",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "two live web indexes, arXiv, primary author manuscripts, RGMIA, university thesis and repository sources, publisher and institutional metadata (novelty_gate_report.md Section 5; novelty_audit.md)",
+     "query": "complete bipartite entropy contraction log n / log 2n; Diananda, Gao, power/arithmetic/geometric means; reverse erasure, Bayesian inverse, SDPI, non-uniform priors; minimum probability, log(1/q), q^(q/(1-q)); fixed arithmetic/geometric means, minimum weight; reverse BEC, agreement distillation"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "internal reviewers during review: arXiv abstract queries, web indexes, OpenAlex citers of Caputo et al. 2025 (novelty_gate_report.md Section 11; novelty_audit.md addendum; REVIEW_SUMMARY.md)",
+     "query": "citers of Caputo-Chen-Gu-Polyanskiy 2025; lazy star KL contraction; one-large-coordinate reductions; agreement distillation reverse erasure"
+    }
+   ],
+   "closestPriorWork": "Zhao 2021 Chapter 3 (SDPI-to-agreement connection and uniform binary case); Guruswami and Radhakrishnan 2016; Bogdanov and Mossel 2011 (different model, stated)",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Method: decomposition of one walk step into two reverse-erasure channels, entropy duality, and reduction of the dual maximiser to one large coordinate at a rarest atom, then translation of the scalar condition into a weighted power/geometric mean inequality.",
+   "unit": "method",
+   "paperLocation": "Sections 3, 4 and 6",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "two live web indexes, arXiv, primary author manuscripts, RGMIA, university thesis and repository sources, publisher and institutional metadata (novelty_gate_report.md Section 5; novelty_audit.md)",
+     "query": "complete bipartite entropy contraction log n / log 2n; Diananda, Gao, power/arithmetic/geometric means; reverse erasure, Bayesian inverse, SDPI, non-uniform priors; minimum probability, log(1/q), q^(q/(1-q)); fixed arithmetic/geometric means, minimum weight; reverse BEC, agreement distillation"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "internal reviewers during review: arXiv abstract queries, web indexes, OpenAlex citers of Caputo et al. 2025 (novelty_gate_report.md Section 11; novelty_audit.md addendum; REVIEW_SUMMARY.md)",
+     "query": "citers of Caputo-Chen-Gu-Polyanskiy 2025; lazy star KL contraction; one-large-coordinate reductions; agreement distillation reverse erasure"
+    }
+   ],
+   "closestPriorWork": "Gao 2003/2009 (mean inequality); Gu and Polyanskiy 2023 (one large coordinate, primal form); standard Donsker-Varadhan duality",
+   "verdict": "known-cited"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Caputo, Chen, Gu and Polyanskiy, Entropy contractions in Markov chains: half-step, full-step and continuous-time, Electronic Journal of Probability 30 (2025), doi:10.1214/25-EJP1372 (arXiv:2409.07689)",
+   "usedFor": "Exact conjecture statement, Example 4.4 and Proposition 4.5 (n = 3)",
+   "readWhat": "Section 4 in the authors' manuscript and arXiv v1; numbering checked in both",
+   "date": "2026-11-01",
+   "evidenceLocator": "refs_records/ccgp_numbering_check.md; novelty_gate_report.md Section 5"
+  },
+  {
+   "citation": "Gao, On an inequality of Diananda, International Journal of Mathematics and Mathematical Sciences 2003, doi:10.1155/S0161171203210279; and Part IV, 2009, doi:10.1155/2009/468290",
+   "usedFor": "Weighted mean inequality behind the closed formula (Lemma 4.1)",
+   "readWhat": "Theorem 3.1 (2003) and Theorem 1.2 (2009) with exponent ranges",
+   "date": "2026-11-01",
+   "evidenceLocator": "novelty_gate_report.md Section 6; novelty_audit.md"
+  },
+  {
+   "citation": "Gao, Some extensions of Diananda's inequality, arXiv:1807.06290",
+   "usedFor": "Check that no free-alpha exact reduction was already given",
+   "readWhat": "Theorem 1.1 and complete Section 2",
+   "date": "2026-11-01",
+   "evidenceLocator": "novelty_gate_report.md Section 6"
+  },
+  {
+   "citation": "Nair and Wang, Evaluating hypercontractivity parameters using information measures, ISIT 2016, doi:10.1109/ISIT.2016.7541363; Zhao, Generalizations and Applications of Hypercontractivity and Small-Set Expansion, PhD thesis, CMU 2021",
+   "usedFor": "Known uniform binary coefficient and the SDPI-to-agreement connection",
+   "readWhat": "Binary erasure results; Zhao Chapter 3",
+   "date": "2026-11-01",
+   "evidenceLocator": "novelty_gate_report.md Section 5; Appendix A of the paper"
+  },
+  {
+   "citation": "Jadhav, Retention profiles and KL contraction bounds in finite Markov chains, arXiv:2606.27073",
+   "usedFor": "Lazy-star numerical observation settled by Corollary 6.2",
+   "readWhat": "Remark 9.6 and surrounding section",
+   "date": "2026-11-03",
+   "evidenceLocator": "novelty_audit.md addendum"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Priority holds only within a bounded literature search.",
+   "closingQuestion": "Has a general-prior reverse-erasure formula or an all-n proof of the conjecture been stated elsewhere?",
+   "triedOrSearched": "Dated searches of 1 and 3 November 2026; one citation index rate-limited; no subscription-database search; no author enquiry.",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Exhaustive search and author enquiry are outside this release; disclosed in the paper and README.",
+   "whyNotClosedNow": "Requires specialist databases and contact with the conjecture authors."
+  },
+  {
+   "limitation": "Above the threshold there is no closed form; uniqueness of the tangency solution and the asymptotics of eta - c_0 are open.",
+   "closingQuestion": "Is the tangency solution unique, at least for binary priors?",
+   "triedOrSearched": "Attainment, full support and exponential-tilt structure proved (Theorem 2.7); near-threshold excess tabulated numerically (Remark 5.2).",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research.",
+   "whyNotClosedNow": "Beyond the scope of this release."
+  },
+  {
+   "limitation": "For laziness other than 1/2, for powers and for multipartite graphs only the reduction is proved; the values and the point-optimality windows are numerical.",
+   "closingQuestion": "Is there a closed description of the laziness phase diagram?",
+   "triedOrSearched": "Reduction to at most two states per block proved (Section 7); laziness grid, powers and multipartite cases computed with five must-fail controls.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Labelled numerical in the paper.",
+   "whyNotClosedNow": "An analytic phase diagram is a separate project."
+  },
+  {
+   "limitation": "The result is a one-step, rank-one statement; it gives no mixing-time improvement (the spectral gap is 1/2) and does not extend to arbitrary cross weights.",
+   "closingQuestion": "Do bounds in terms of the distance from rank one exist?",
+   "triedOrSearched": "Counterexample to extension beyond rank one recorded in Section 9.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research.",
+   "whyNotClosedNow": "Beyond the scope of this release."
+  },
+  {
+   "limitation": "Scripts used assert gates and overwrote their recorded output (review objection).",
+   "closingQuestion": "Do the checks still fail under -O without touching recorded outputs?",
+   "triedOrSearched": "Explicit failure collection and exit status; --output-dir required and overwrite refused; normal and -O outputs recorded; clean replay at release.",
+   "estimatedCost": "1 hour",
+   "decision": "CLOSED",
+   "cheap": true
+  },
+  {
+   "limitation": "Random tests had little power near sharp boundaries (review objection).",
+   "closingQuestion": "Do the checks detect false versions of the main claims?",
+   "triedOrSearched": "Ten must-fail negative controls (all detected) plus near-extremiser families; five further controls for Section 7.",
+   "estimatedCost": "2 hours",
+   "decision": "CLOSED",
+   "cheap": true
+  }
+ ],
+ "extensionScout": {
+  "by": "Internal AI-assisted reviewers and the lead, 3 November 2026",
+  "date": "2026-11-03",
+  "proposals": [
+   "Treat laziness other than 1/2, matrix powers and multipartite graphs",
+   "Settle the lazy star left open by Jadhav (2026)",
+   "Motivate and compare the agreement-distillation application",
+   "Add negative controls near the sharp boundaries",
+   "Credit inherited results explicitly"
+  ],
+  "actions": [
+   "Section 7: block-reset reduction to at most two states per block, with extension_checks.py",
+   "Corollary 6.2 settles the lazy star",
+   "Section 8 motivation and Remark 8.2 comparison",
+   "negative_controls.py and five controls in extension_checks.py",
+   "Section 1.4 and Table 1 separate new from inherited results"
+  ]
+ }
+}

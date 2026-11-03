@@ -1,0 +1,1102 @@
+{
+  "script": "validate_entropy.py",
+  "source_sha256": "8fac29ce470edefddb963cf5c6dffd8b16fe77c28e07c1443de7662aeac1b347",
+  "seed": 20261101,
+  "python": "3.11.14",
+  "python_optimize_flag": 1,
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "residual_gate": 2e-12,
+  "exact_markov": [
+    {
+      "m": 1,
+      "n": 1,
+      "rows_sum_to_one": true,
+      "stationarity": true,
+      "detailed_balance": true,
+      "pi": [
+        "1/2",
+        "1/2"
+      ],
+      "P": [
+        [
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "1/2"
+        ]
+      ]
+    },
+    {
+      "m": 1,
+      "n": 2,
+      "rows_sum_to_one": true,
+      "stationarity": true,
+      "detailed_balance": true,
+      "pi": [
+        "1/2",
+        "1/4",
+        "1/4"
+      ],
+      "P": [
+        [
+          "1/2",
+          "1/4",
+          "1/4"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "0"
+        ],
+        [
+          "1/2",
+          "0",
+          "1/2"
+        ]
+      ]
+    },
+    {
+      "m": 2,
+      "n": 2,
+      "rows_sum_to_one": true,
+      "stationarity": true,
+      "detailed_balance": true,
+      "pi": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "P": [
+        [
+          "1/2",
+          "0",
+          "1/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "1/2",
+          "1/4",
+          "1/4"
+        ],
+        [
+          "1/4",
+          "1/4",
+          "1/2",
+          "0"
+        ],
+        [
+          "1/4",
+          "1/4",
+          "0",
+          "1/2"
+        ]
+      ]
+    },
+    {
+      "m": 2,
+      "n": 3,
+      "rows_sum_to_one": true,
+      "stationarity": true,
+      "detailed_balance": true,
+      "pi": [
+        "1/4",
+        "1/4",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "P": [
+        [
+          "1/2",
+          "0",
+          "1/6",
+          "1/6",
+          "1/6"
+        ],
+        [
+          "0",
+          "1/2",
+          "1/6",
+          "1/6",
+          "1/6"
+        ],
+        [
+          "1/4",
+          "1/4",
+          "1/2",
+          "0",
+          "0"
+        ],
+        [
+          "1/4",
+          "1/4",
+          "0",
+          "1/2",
+          "0"
+        ],
+        [
+          "1/4",
+          "1/4",
+          "0",
+          "0",
+          "1/2"
+        ]
+      ]
+    },
+    {
+      "m": 3,
+      "n": 3,
+      "rows_sum_to_one": true,
+      "stationarity": true,
+      "detailed_balance": true,
+      "pi": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "P": [
+        [
+          "1/2",
+          "0",
+          "0",
+          "1/6",
+          "1/6",
+          "1/6"
+        ],
+        [
+          "0",
+          "1/2",
+          "0",
+          "1/6",
+          "1/6",
+          "1/6"
+        ],
+        [
+          "0",
+          "0",
+          "1/2",
+          "1/6",
+          "1/6",
+          "1/6"
+        ],
+        [
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/2",
+          "0",
+          "0"
+        ],
+        [
+          "1/6",
+          "1/6",
+          "1/6",
+          "0",
+          "1/2",
+          "0"
+        ],
+        [
+          "1/6",
+          "1/6",
+          "1/6",
+          "0",
+          "0",
+          "1/2"
+        ]
+      ]
+    }
+  ],
+  "bipartite": [
+    {
+      "m": 1,
+      "n": 1,
+      "samples": 8008,
+      "theorem_coefficient": 0.0,
+      "largest_observed_ratio": 1.361123221604634e-10,
+      "largest_inequality_residual": 2.220446049250313e-16,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "m": 1,
+      "n": 2,
+      "samples": 8012,
+      "theorem_coefficient": 0.25,
+      "largest_observed_ratio": 0.25000000000000006,
+      "largest_inequality_residual": 5.551115123125783e-17,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "m": 2,
+      "n": 2,
+      "samples": 8016,
+      "theorem_coefficient": 0.25,
+      "largest_observed_ratio": 0.25000000000000006,
+      "largest_inequality_residual": 5.551115123125783e-17,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "m": 1,
+      "n": 3,
+      "samples": 8016,
+      "theorem_coefficient": 0.30657359638272924,
+      "largest_observed_ratio": 0.3065735963827293,
+      "largest_inequality_residual": 1.1102230246251565e-16,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "m": 2,
+      "n": 3,
+      "samples": 8020,
+      "theorem_coefficient": 0.30657359638272924,
+      "largest_observed_ratio": 0.3065735963827293,
+      "largest_inequality_residual": 1.1102230246251565e-16,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "m": 3,
+      "n": 3,
+      "samples": 8024,
+      "theorem_coefficient": 0.30657359638272924,
+      "largest_observed_ratio": 0.3065735963827293,
+      "largest_inequality_residual": 1.1102230246251565e-16,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "m": 3,
+      "n": 4,
+      "samples": 8028,
+      "theorem_coefficient": 0.33333333333333337,
+      "largest_observed_ratio": 0.33333333333333337,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "m": 2,
+      "n": 10,
+      "samples": 8048,
+      "theorem_coefficient": 0.3843108934201205,
+      "largest_observed_ratio": 0.3843108934201205,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "m": 7,
+      "n": 11,
+      "samples": 8072,
+      "theorem_coefficient": 0.38787808789121225,
+      "largest_observed_ratio": 0.38787808789121225,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "m": 10,
+      "n": 10,
+      "samples": 8080,
+      "theorem_coefficient": 0.3843108934201205,
+      "largest_observed_ratio": 0.3843108934201205,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "m": 3,
+      "n": 100,
+      "samples": 8412,
+      "theorem_coefficient": 0.4345879896760937,
+      "largest_observed_ratio": 0.4345879896760937,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    }
+  ],
+  "binary_equality": {
+    "samples": 202,
+    "max_absolute_identity_error": 2.498001805406602e-16,
+    "gate": 2e-14,
+    "passed": true
+  },
+  "power_mean": [
+    {
+      "n": 2,
+      "p": 2.0,
+      "samples": 4500,
+      "largest_normalised_residual": 4.440892098500626e-16,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 2,
+      "p": 3.0,
+      "samples": 4500,
+      "largest_normalised_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 2,
+      "p": 6.0,
+      "samples": 4500,
+      "largest_normalised_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 3,
+      "p": 1.5,
+      "samples": 4500,
+      "largest_normalised_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 3,
+      "p": 1.6309297535714573,
+      "samples": 4500,
+      "largest_normalised_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 3,
+      "p": 2.0,
+      "samples": 4500,
+      "largest_normalised_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 3,
+      "p": 3.0,
+      "samples": 4500,
+      "largest_normalised_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 3,
+      "p": 6.0,
+      "samples": 4500,
+      "largest_normalised_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 4,
+      "p": 1.3333333333333333,
+      "samples": 4500,
+      "largest_normalised_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 4,
+      "p": 1.5,
+      "samples": 4500,
+      "largest_normalised_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 4,
+      "p": 2.0,
+      "samples": 4500,
+      "largest_normalised_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 4,
+      "p": 3.0,
+      "samples": 4500,
+      "largest_normalised_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 4,
+      "p": 6.0,
+      "samples": 4500,
+      "largest_normalised_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 5,
+      "p": 1.25,
+      "samples": 4500,
+      "largest_normalised_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 5,
+      "p": 1.4306765580733931,
+      "samples": 4500,
+      "largest_normalised_residual": -1.1102230246251565e-16,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 5,
+      "p": 2.0,
+      "samples": 4500,
+      "largest_normalised_residual": -1.0436096431476471e-14,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 5,
+      "p": 3.0,
+      "samples": 4500,
+      "largest_normalised_residual": -1.9984014443252818e-15,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 5,
+      "p": 6.0,
+      "samples": 4500,
+      "largest_normalised_residual": -8.359979375427429e-13,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 10,
+      "p": 1.1111111111111112,
+      "samples": 4500,
+      "largest_normalised_residual": -2.8391670192640106e-07,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 10,
+      "p": 1.3010299956639813,
+      "samples": 4500,
+      "largest_normalised_residual": -1.1709535752135736e-07,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 10,
+      "p": 2.0,
+      "samples": 4500,
+      "largest_normalised_residual": -1.9860994626696993e-08,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 10,
+      "p": 3.0,
+      "samples": 4500,
+      "largest_normalised_residual": -3.6536219061300557e-07,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 10,
+      "p": 6.0,
+      "samples": 4500,
+      "largest_normalised_residual": -3.915693142619858e-06,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 32,
+      "p": 1.032258064516129,
+      "samples": 4500,
+      "largest_normalised_residual": -0.0018006335264647566,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 32,
+      "p": 1.2,
+      "samples": 4500,
+      "largest_normalised_residual": -0.006031384338568091,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 32,
+      "p": 2.0,
+      "samples": 4500,
+      "largest_normalised_residual": -0.020344605480957068,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 32,
+      "p": 3.0,
+      "samples": 4500,
+      "largest_normalised_residual": -0.00846017506008434,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 32,
+      "p": 6.0,
+      "samples": 4500,
+      "largest_normalised_residual": -0.01630300566858367,
+      "gate": 2e-12,
+      "passed": true
+    }
+  ],
+  "reverse_erasure": [
+    {
+      "n": 2,
+      "alpha": 0.02,
+      "alpha_critical": 0.5,
+      "coefficient": 0.15051499783199057,
+      "samples": 6003,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 2,
+      "alpha": 0.5,
+      "alpha_critical": 0.5,
+      "coefficient": 0.5,
+      "samples": 6003,
+      "largest_inequality_residual": 2.220446049250313e-16,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 3,
+      "alpha": 0.02,
+      "alpha_critical": 0.5773502691896257,
+      "coefficient": 0.21925608713979677,
+      "samples": 6004,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 3,
+      "alpha": 0.3333333333333333,
+      "alpha_critical": 0.5773502691896257,
+      "coefficient": 0.5,
+      "samples": 6004,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 3,
+      "alpha": 0.5,
+      "alpha_critical": 0.5773502691896257,
+      "coefficient": 0.6131471927654585,
+      "samples": 6004,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 3,
+      "alpha": 0.5773502691896257,
+      "alpha_critical": 0.5773502691896257,
+      "coefficient": 0.6666666666666667,
+      "samples": 6004,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 4,
+      "alpha": 0.02,
+      "alpha_critical": 0.6299605249474366,
+      "coefficient": 0.2616480412956255,
+      "samples": 6005,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 4,
+      "alpha": 0.25,
+      "alpha_critical": 0.6299605249474366,
+      "coefficient": 0.5,
+      "samples": 6005,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 4,
+      "alpha": 0.5,
+      "alpha_critical": 0.6299605249474366,
+      "coefficient": 0.6666666666666667,
+      "samples": 6005,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 4,
+      "alpha": 0.6299605249474366,
+      "alpha_critical": 0.6299605249474366,
+      "coefficient": 0.75,
+      "samples": 6005,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 10,
+      "alpha": 0.02,
+      "alpha_critical": 0.7742636826811271,
+      "coefficient": 0.3705117131325855,
+      "samples": 6011,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 10,
+      "alpha": 0.1,
+      "alpha_critical": 0.7742636826811271,
+      "coefficient": 0.5,
+      "samples": 6011,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 10,
+      "alpha": 0.5,
+      "alpha_critical": 0.7742636826811271,
+      "coefficient": 0.768621786840241,
+      "samples": 6011,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 10,
+      "alpha": 0.7742636826811271,
+      "alpha_critical": 0.7742636826811271,
+      "coefficient": 0.9000000000000001,
+      "samples": 6011,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 32,
+      "alpha": 0.02,
+      "alpha_critical": 0.8942249331776564,
+      "coefficient": 0.469754561772769,
+      "samples": 6033,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 32,
+      "alpha": 0.03125,
+      "alpha_critical": 0.8942249331776564,
+      "coefficient": 0.5,
+      "samples": 6033,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 32,
+      "alpha": 0.5,
+      "alpha_critical": 0.8942249331776564,
+      "coefficient": 0.8333333333333334,
+      "samples": 6033,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    },
+    {
+      "n": 32,
+      "alpha": 0.8942249331776564,
+      "alpha_critical": 0.8942249331776564,
+      "coefficient": 0.96875,
+      "samples": 6033,
+      "largest_inequality_residual": 0.0,
+      "gate": 2e-12,
+      "passed": true
+    }
+  ],
+  "weighted": {
+    "reverse_erasure": [
+      {
+        "mu": [
+          0.1,
+          0.2,
+          0.7
+        ],
+        "alpha": 0.03,
+        "alpha_critical": 0.774263682681127,
+        "coefficient": 0.3963725969275158,
+        "samples": 3004,
+        "largest_inequality_residual": 0.0,
+        "gate": 2e-12,
+        "passed": true
+      },
+      {
+        "mu": [
+          0.1,
+          0.2,
+          0.7
+        ],
+        "alpha": 0.1,
+        "alpha_critical": 0.774263682681127,
+        "coefficient": 0.5000000000000001,
+        "samples": 3004,
+        "largest_inequality_residual": 0.0,
+        "gate": 2e-12,
+        "passed": true
+      },
+      {
+        "mu": [
+          0.1,
+          0.2,
+          0.7
+        ],
+        "alpha": 0.5,
+        "alpha_critical": 0.774263682681127,
+        "coefficient": 0.768621786840241,
+        "samples": 3004,
+        "largest_inequality_residual": 0.0,
+        "gate": 2e-12,
+        "passed": true
+      },
+      {
+        "mu": [
+          0.1,
+          0.2,
+          0.7
+        ],
+        "alpha": 0.774263682681127,
+        "alpha_critical": 0.774263682681127,
+        "coefficient": 0.9000000000000001,
+        "samples": 3004,
+        "largest_inequality_residual": 0.0,
+        "gate": 2e-12,
+        "passed": true
+      },
+      {
+        "mu": [
+          0.49,
+          0.51
+        ],
+        "alpha": 0.03,
+        "alpha_critical": 0.5039010384508275,
+        "coefficient": 0.16904395171376657,
+        "samples": 3003,
+        "largest_inequality_residual": 0.0,
+        "gate": 2e-12,
+        "passed": true
+      },
+      {
+        "mu": [
+          0.49,
+          0.51
+        ],
+        "alpha": 0.49,
+        "alpha_critical": 0.5039010384508275,
+        "coefficient": 0.5,
+        "samples": 3003,
+        "largest_inequality_residual": 0.0,
+        "gate": 2e-12,
+        "passed": true
+      },
+      {
+        "mu": [
+          0.49,
+          0.51
+        ],
+        "alpha": 0.5,
+        "alpha_critical": 0.5039010384508275,
+        "coefficient": 0.5071819230096101,
+        "samples": 3003,
+        "largest_inequality_residual": 0.0,
+        "gate": 2e-12,
+        "passed": true
+      },
+      {
+        "mu": [
+          0.49,
+          0.51
+        ],
+        "alpha": 0.5039010384508275,
+        "alpha_critical": 0.5039010384508275,
+        "coefficient": 0.51,
+        "samples": 3003,
+        "largest_inequality_residual": 1.1102230246251565e-16,
+        "gate": 2e-12,
+        "passed": true
+      },
+      {
+        "mu": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "alpha": 0.03,
+        "alpha_critical": 0.668740304976422,
+        "coefficient": 0.3145893726819654,
+        "samples": 3004,
+        "largest_inequality_residual": 0.0,
+        "gate": 2e-12,
+        "passed": true
+      },
+      {
+        "mu": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "alpha": 0.2,
+        "alpha_critical": 0.668740304976422,
+        "coefficient": 0.5,
+        "samples": 3004,
+        "largest_inequality_residual": 0.0,
+        "gate": 2e-12,
+        "passed": true
+      },
+      {
+        "mu": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "alpha": 0.5,
+        "alpha_critical": 0.668740304976422,
+        "coefficient": 0.6989700043360187,
+        "samples": 3004,
+        "largest_inequality_residual": 0.0,
+        "gate": 2e-12,
+        "passed": true
+      },
+      {
+        "mu": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "alpha": 0.668740304976422,
+        "alpha_critical": 0.668740304976422,
+        "coefficient": 0.7999999999999999,
+        "samples": 3004,
+        "largest_inequality_residual": 0.0,
+        "gate": 2e-12,
+        "passed": true
+      },
+      {
+        "mu": [
+          0.05,
+          0.05,
+          0.2,
+          0.7
+        ],
+        "alpha": 0.03,
+        "alpha_critical": 0.8541314966877566,
+        "coefficient": 0.46071956108217405,
+        "samples": 3005,
+        "largest_inequality_residual": 0.0,
+        "gate": 2e-12,
+        "passed": true
+      },
+      {
+        "mu": [
+          0.05,
+          0.05,
+          0.2,
+          0.7
+        ],
+        "alpha": 0.05,
+        "alpha_critical": 0.8541314966877566,
+        "coefficient": 0.5,
+        "samples": 3005,
+        "largest_inequality_residual": 0.0,
+        "gate": 2e-12,
+        "passed": true
+      },
+      {
+        "mu": [
+          0.05,
+          0.05,
+          0.2,
+          0.7
+        ],
+        "alpha": 0.5,
+        "alpha_critical": 0.8541314966877566,
+        "coefficient": 0.8120981752908923,
+        "samples": 3005,
+        "largest_inequality_residual": 0.0,
+        "gate": 2e-12,
+        "passed": true
+      },
+      {
+        "mu": [
+          0.05,
+          0.05,
+          0.2,
+          0.7
+        ],
+        "alpha": 0.8541314966877566,
+        "alpha_critical": 0.8541314966877566,
+        "coefficient": 0.95,
+        "samples": 3005,
+        "largest_inequality_residual": 0.0,
+        "gate": 2e-12,
+        "passed": true
+      }
+    ],
+    "bipartite_reset": [
+      {
+        "left_prior": [
+          0.1,
+          0.2,
+          0.7
+        ],
+        "right_prior": [
+          0.49,
+          0.51
+        ],
+        "coefficient": 0.3843108934201205,
+        "samples": 4505,
+        "stationarity_error": 0.0,
+        "largest_inequality_residual": 0.0,
+        "gate": 2e-12,
+        "passed": true
+      },
+      {
+        "left_prior": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "right_prior": [
+          0.05,
+          0.05,
+          0.2,
+          0.7
+        ],
+        "coefficient": 0.40604908764544617,
+        "samples": 4507,
+        "stationarity_error": 0.0,
+        "largest_inequality_residual": 2.220446049250313e-16,
+        "gate": 2e-12,
+        "passed": true
+      },
+      {
+        "left_prior": [
+          1.0
+        ],
+        "right_prior": [
+          0.1,
+          0.2,
+          0.7
+        ],
+        "coefficient": 0.3843108934201205,
+        "samples": 4504,
+        "stationarity_error": 0.0,
+        "largest_inequality_residual": 0.0,
+        "gate": 2e-12,
+        "passed": true
+      },
+      {
+        "left_prior": [
+          0.5,
+          0.5
+        ],
+        "right_prior": [
+          0.49,
+          0.51
+        ],
+        "coefficient": 0.25359096150480503,
+        "samples": 4504,
+        "stationarity_error": 0.0,
+        "largest_inequality_residual": 0.0,
+        "gate": 2e-12,
+        "passed": true
+      }
+    ]
+  },
+  "supercritical_witnesses": [
+    {
+      "n": 3,
+      "alpha": 0.7,
+      "erasure_mass": "0.001",
+      "point_ratio": "0.754910964689888764642656648138746931277877756499222945868364282506571260798432369033739590400245310797808320206373877093",
+      "witness_ratio": "0.755018053183672778871742464346692347793351083360001579283281431323882011925765438296198073658577056274867710449624111663",
+      "improvement": "0.000107088493784014229085816207945416515473326860778633414917148817310751127333069262458483258331745477059390243250234570",
+      "inequality_violation": "0.00015497082883944740308259625270725867355138147364391889943805523226829818037279283127870619183471744755246216502363025",
+      "decimal_precision": 120,
+      "passed": true,
+      "status": "explicit lower bound, not claimed globally optimal"
+    },
+    {
+      "n": 3,
+      "alpha": 0.8,
+      "erasure_mass": "0.001",
+      "point_ratio": "0.831176421117840757962454721315279401124963950585331024134632501047523885265014831166912029522183600401758614444543404336",
+      "witness_ratio": "0.831426917724967891395711019304398943012108547179068286579782577725667959181727267865539834037052605573242430464817898143",
+      "improvement": "0.000250496607127133433256297989119541887144596593737262445150076678144073916712436698627804514869005171483816020274493807",
+      "inequality_violation": "0.00032918667617182297418582007043518181745154078449723158103729001296885436689026888113573262963321516953776702133717444",
+      "decimal_precision": 120,
+      "passed": true,
+      "status": "explicit lower bound, not claimed globally optimal"
+    },
+    {
+      "n": 4,
+      "alpha": 0.8,
+      "erasure_mass": "0.0001",
+      "point_ratio": "0.861353116146786101340213137527931264139583864159520898643952075921324165075771012167396198890533951286270070072743957159",
+      "witness_ratio": "0.861359160444387934507378984400106406693849289044375205775691364569233649823235478725477577376013959153092570755783462395",
+      "improvement": "0.000006044297601833167165846872175142554265424884854307131739288647909484747464466558081378485480007866822500683039505236",
+      "inequality_violation": "0.00000972175031106488363044435766795863603284313010586373025821214597938249119349173144921359850364285166730020843675283",
+      "decimal_precision": 120,
+      "passed": true,
+      "status": "explicit lower bound, not claimed globally optimal"
+    },
+    {
+      "n": 10,
+      "alpha": 0.9,
+      "erasure_mass": "1E-15",
+      "point_ratio": "0.956244644696599221978459560919105625707475641553570592830371020278857010934750199803697190040162044700988184368274995758",
+      "witness_ratio": "0.956244644696599233311645971448238302577153853774089868332795830930394417702573571613809061567876509761936032805289404537",
+      "improvement": "1.1333186410529132676869678212220519275502424810651537406767823371810111871527714465060947848437014408779E-17",
+      "inequality_violation": "2.728969644926629274825843709714121329045607958008115024187586694057664250196428041591004124569341057641E-17",
+      "decimal_precision": 120,
+      "passed": true,
+      "status": "explicit lower bound, not claimed globally optimal"
+    }
+  ],
+  "counts": {
+    "graph_samples": 88736,
+    "mean_samples": 126000,
+    "erasure_samples": 108218,
+    "weighted_samples": 66084
+  },
+  "gates_evaluated": 101,
+  "failures": [],
+  "passed": true,
+  "status": "all finite diagnostics passed (numerical evidence only; not a proof)",
+  "elapsed_seconds": 0.20767795899882913
+}

@@ -1,0 +1,424 @@
+{
+  "date": "2026-11-01",
+  "role": "Object normalisation. The complete-bipartite kernels and their spectra are established objects, not originality claims.",
+  "exact_instances": [
+    {
+      "m": 1,
+      "n": 1,
+      "matrix": [
+        [
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "1/2"
+        ]
+      ],
+      "stationary_law": [
+        "1/2",
+        "1/2"
+      ],
+      "row_sums": [
+        "1",
+        "1"
+      ],
+      "column_sums": [
+        "1",
+        "1"
+      ],
+      "trace": "1",
+      "determinant": "0",
+      "rank": 1,
+      "characteristic_polynomial": "x*(x-1)*(x-1/2)^(m+n-2)",
+      "characteristic_coefficients_ascending": [
+        "0",
+        "-1",
+        "1"
+      ],
+      "eigenvalues": {
+        "1": 1,
+        "1/2": 0,
+        "0": 1
+      },
+      "entry_multiset": {
+        "1/2": 4
+      },
+      "hashes": {
+        "original": "fb885a0a4b4340324f9123c4489f3757137308910a7e0f7bf81e732d6917736b",
+        "transpose": "fb885a0a4b4340324f9123c4489f3757137308910a7e0f7bf81e732d6917736b",
+        "index_reversal": "fb885a0a4b4340324f9123c4489f3757137308910a7e0f7bf81e732d6917736b",
+        "part_swap": "fb885a0a4b4340324f9123c4489f3757137308910a7e0f7bf81e732d6917736b"
+      },
+      "exact_checks": {
+        "stochastic": true,
+        "stationary": true,
+        "reversible": true
+      }
+    },
+    {
+      "m": 2,
+      "n": 2,
+      "matrix": [
+        [
+          "1/2",
+          "0",
+          "1/4",
+          "1/4"
+        ],
+        [
+          "0",
+          "1/2",
+          "1/4",
+          "1/4"
+        ],
+        [
+          "1/4",
+          "1/4",
+          "1/2",
+          "0"
+        ],
+        [
+          "1/4",
+          "1/4",
+          "0",
+          "1/2"
+        ]
+      ],
+      "stationary_law": [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      "row_sums": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "column_sums": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "trace": "2",
+      "determinant": "0",
+      "rank": 3,
+      "characteristic_polynomial": "x*(x-1)*(x-1/2)^(m+n-2)",
+      "characteristic_coefficients_ascending": [
+        "0",
+        "-1/4",
+        "5/4",
+        "-2",
+        "1"
+      ],
+      "eigenvalues": {
+        "1": 1,
+        "1/2": 2,
+        "0": 1
+      },
+      "entry_multiset": {
+        "0": 4,
+        "1/4": 8,
+        "1/2": 4
+      },
+      "hashes": {
+        "original": "64d124f20c3dbf178275834eb6022fac22fe4e0c8790aff244ad9939710c201c",
+        "transpose": "64d124f20c3dbf178275834eb6022fac22fe4e0c8790aff244ad9939710c201c",
+        "index_reversal": "64d124f20c3dbf178275834eb6022fac22fe4e0c8790aff244ad9939710c201c",
+        "part_swap": "64d124f20c3dbf178275834eb6022fac22fe4e0c8790aff244ad9939710c201c"
+      },
+      "exact_checks": {
+        "stochastic": true,
+        "stationary": true,
+        "reversible": true
+      }
+    },
+    {
+      "m": 3,
+      "n": 3,
+      "matrix": [
+        [
+          "1/2",
+          "0",
+          "0",
+          "1/6",
+          "1/6",
+          "1/6"
+        ],
+        [
+          "0",
+          "1/2",
+          "0",
+          "1/6",
+          "1/6",
+          "1/6"
+        ],
+        [
+          "0",
+          "0",
+          "1/2",
+          "1/6",
+          "1/6",
+          "1/6"
+        ],
+        [
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/2",
+          "0",
+          "0"
+        ],
+        [
+          "1/6",
+          "1/6",
+          "1/6",
+          "0",
+          "1/2",
+          "0"
+        ],
+        [
+          "1/6",
+          "1/6",
+          "1/6",
+          "0",
+          "0",
+          "1/2"
+        ]
+      ],
+      "stationary_law": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "row_sums": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "column_sums": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "trace": "3",
+      "determinant": "0",
+      "rank": 5,
+      "characteristic_polynomial": "x*(x-1)*(x-1/2)^(m+n-2)",
+      "characteristic_coefficients_ascending": [
+        "0",
+        "-1/16",
+        "9/16",
+        "-2",
+        "7/2",
+        "-3",
+        "1"
+      ],
+      "eigenvalues": {
+        "1": 1,
+        "1/2": 4,
+        "0": 1
+      },
+      "entry_multiset": {
+        "0": 12,
+        "1/6": 18,
+        "1/2": 6
+      },
+      "hashes": {
+        "original": "6770d99f28a0d0510d76b6a1c83c53a52c43358efe6ccd42ffa3dfeff6ba0f10",
+        "transpose": "6770d99f28a0d0510d76b6a1c83c53a52c43358efe6ccd42ffa3dfeff6ba0f10",
+        "index_reversal": "6770d99f28a0d0510d76b6a1c83c53a52c43358efe6ccd42ffa3dfeff6ba0f10",
+        "part_swap": "6770d99f28a0d0510d76b6a1c83c53a52c43358efe6ccd42ffa3dfeff6ba0f10"
+      },
+      "exact_checks": {
+        "stochastic": true,
+        "stationary": true,
+        "reversible": true
+      }
+    },
+    {
+      "m": 1,
+      "n": 2,
+      "matrix": [
+        [
+          "1/2",
+          "1/4",
+          "1/4"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "0"
+        ],
+        [
+          "1/2",
+          "0",
+          "1/2"
+        ]
+      ],
+      "stationary_law": [
+        "1/2",
+        "1/4",
+        "1/4"
+      ],
+      "row_sums": [
+        "1",
+        "1",
+        "1"
+      ],
+      "column_sums": [
+        "3/2",
+        "3/4",
+        "3/4"
+      ],
+      "trace": "3/2",
+      "determinant": "0",
+      "rank": 2,
+      "characteristic_polynomial": "x*(x-1)*(x-1/2)^(m+n-2)",
+      "characteristic_coefficients_ascending": [
+        "0",
+        "1/2",
+        "-3/2",
+        "1"
+      ],
+      "eigenvalues": {
+        "1": 1,
+        "1/2": 1,
+        "0": 1
+      },
+      "entry_multiset": {
+        "0": 2,
+        "1/4": 2,
+        "1/2": 5
+      },
+      "hashes": {
+        "original": "1c7248b695266fd218de23dff78974636d8cff337af2e3f2e4d05309497abb01",
+        "transpose": "52ff981c9b0b583749b78a9f102bdc00b2f8bb5dd9be617587eadc3d28574ef3",
+        "index_reversal": "ce448ef8c1269eec0e57c3b3f9c731ded44b1679586fa3f0cc8efbb8688c8dc4",
+        "part_swap": "ce448ef8c1269eec0e57c3b3f9c731ded44b1679586fa3f0cc8efbb8688c8dc4"
+      },
+      "exact_checks": {
+        "stochastic": true,
+        "stationary": true,
+        "reversible": true
+      }
+    },
+    {
+      "m": 2,
+      "n": 3,
+      "matrix": [
+        [
+          "1/2",
+          "0",
+          "1/6",
+          "1/6",
+          "1/6"
+        ],
+        [
+          "0",
+          "1/2",
+          "1/6",
+          "1/6",
+          "1/6"
+        ],
+        [
+          "1/4",
+          "1/4",
+          "1/2",
+          "0",
+          "0"
+        ],
+        [
+          "1/4",
+          "1/4",
+          "0",
+          "1/2",
+          "0"
+        ],
+        [
+          "1/4",
+          "1/4",
+          "0",
+          "0",
+          "1/2"
+        ]
+      ],
+      "stationary_law": [
+        "1/4",
+        "1/4",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "row_sums": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "column_sums": [
+        "5/4",
+        "5/4",
+        "5/6",
+        "5/6",
+        "5/6"
+      ],
+      "trace": "5/2",
+      "determinant": "0",
+      "rank": 4,
+      "characteristic_polynomial": "x*(x-1)*(x-1/2)^(m+n-2)",
+      "characteristic_coefficients_ascending": [
+        "0",
+        "1/8",
+        "-7/8",
+        "9/4",
+        "-5/2",
+        "1"
+      ],
+      "eigenvalues": {
+        "1": 1,
+        "1/2": 3,
+        "0": 1
+      },
+      "entry_multiset": {
+        "0": 8,
+        "1/6": 6,
+        "1/4": 6,
+        "1/2": 5
+      },
+      "hashes": {
+        "original": "6ea4a5b58cce77f78337f881b3639f79622689459505c4a8ec9b0b2d1c74fa51",
+        "transpose": "bba14da09a188bfd48fc9f239744cefc5be334ce973d3ddfe27d7bc2ba6e3e40",
+        "index_reversal": "cd18a803a387b58f51d50832550529e5ac8367712976a8726a5d8981b2a65259",
+        "part_swap": "cd18a803a387b58f51d50832550529e5ac8367712976a8726a5d8981b2a65259"
+      },
+      "exact_checks": {
+        "stochastic": true,
+        "stationary": true,
+        "reversible": true
+      }
+    }
+  ],
+  "general_invariants": {
+    "rank": "m+n-1",
+    "trace": "(m+n)/2",
+    "determinant": "0",
+    "eigenvectors": "constant:1; part difference:0; within-part mean-zero:1/2",
+    "resolvent": "sum_{k>=0} t^k P^k = I + t/(1-t)*Pi + (t/2)/(1-t/2)*Q, with Q=I-Pi-S",
+    "powers": "P^k=Pi+2^(-k)Q for k>=1; S projects onto the part-difference function",
+    "symmetry_uniform": "S_m x S_n, with an additional exchange of parts when m=n"
+  }
+}

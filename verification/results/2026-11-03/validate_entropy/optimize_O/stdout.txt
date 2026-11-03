@@ -1,0 +1,10 @@
+{
+  "output_file": "validation_results.json",
+  "status": "all finite diagnostics passed (numerical evidence only; not a proof)",
+  "gates_evaluated": 101,
+  "graph_samples": 88736,
+  "mean_samples": 126000,
+  "erasure_samples": 108218,
+  "weighted_samples": 66084,
+  "elapsed_seconds": 0.20767795899882913
+}

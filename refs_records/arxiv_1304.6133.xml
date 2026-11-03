@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/uQWtFpx+IEG2gpkLxWeBVDMapJA</id>
+  <title>arXiv Query: search_query=&amp;id_list=1304.6133&amp;start=0&amp;max_results=10</title>
+  <updated>2026-11-03T13:03:23Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=1304.6133" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/1304.6133v1</id>
+    <title>On Maximal Correlation, Hypercontractivity, and the Data Processing Inequality studied by Erkip and Cover</title>
+    <updated>2013-04-22T23:18:28Z</updated>
+    <link href="https://arxiv.org/abs/1304.6133v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1304.6133v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper we provide a new geometric characterization of the Hirschfeld-Gebelein-Rényi maximal correlation of a pair of random $(X,Y)$, as well as of the chordal slope of the nontrivial boundary of the hypercontractivity ribbon of $(X,Y)$ at infinity. The new characterizations lead to simple proofs for some of the known facts about these quantities. We also provide a counterexample to a data processing inequality claimed by Erkip and Cover, and find the correct tight constant for this kind of inequality.</summary>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2013-04-22T23:18:28Z</published>
+    <arxiv:comment>11 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.IT"/>
+    <author>
+      <name>Venkat Anantharam</name>
+    </author>
+    <author>
+      <name>Amin Gohari</name>
+    </author>
+    <author>
+      <name>Sudeep Kamath</name>
+    </author>
+    <author>
+      <name>Chandra Nair</name>
+    </author>
+  </entry>
+</feed>

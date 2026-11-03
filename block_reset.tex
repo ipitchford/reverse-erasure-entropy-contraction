@@ -1,0 +1,472 @@
+\section{Block-reset chains}\label{sec:blockreset}
+
+The proof of Theorem \ref{thm:reduction} uses the reverse-erasure structure
+only through two facts: a test function enters through its arithmetic and
+geometric means, and a power sum is maximised at those means by a vector that
+singles out a rarest atom. This section shows that both facts survive in a
+much larger class of chains, with no restriction on the laziness. The
+consequence is that every chain in the class has the same coefficient as a
+small explicit chain, in which each block is replaced by a two-point law.
+
+\subsection{The class and its collapse}
+
+Let \(X\) be the disjoint union of finite nonempty blocks \(X_B\),
+\(B\in\mathcal B\), and let \(\mu_B\) be a full-support law on \(X_B\). Fix
+numbers \(a_B\in[0,1]\) and \(M_{BC}\ge0\) with
+\(\sum_C M_{BC}=1-a_B\). The \emph{block-reset chain} is
+\begin{equation}\label{br:eq:K}
+K(x,\cdot)=a_B\,\delta_x+\sum_{C}M_{BC}\,\mu_C\qquad(x\in X_B).
+\end{equation}
+From \(x\) it stays put with probability \(a_B\); otherwise it chooses a block
+\(C\) and resamples a fresh point from \(\mu_C\). The cross weights between a
+point and a block are therefore rank one inside each pair of blocks.
+Take a reference law \(\pi=\sum_B w_B\mu_B\) with \(w_B>0\),
+\(\sum_B w_B=1\). Stationarity is not required. Then
+\begin{equation}\label{br:eq:output}
+\lambda:=\pi K=\sum_C w'_C\,\mu_C,\qquad
+w'_C=a_Cw_C+\sum_B w_B M_{BC}.
+\end{equation}
+We assume \(w'_C>0\) for every \(C\), so that \(\lambda\) has full support;
+this holds automatically when \(\pi K=\pi\).
+Write \(q_B=\min\mu_B\). When \(|X_B|\ge2\), \(q_B\le1/2\).
+
+The \emph{collapsed chain} \(\widehat K\) has the same block indices,
+the same numbers \(a_B,M_{BC},w_B\), and block laws
+\[
+\widehat\mu_B=(q_B,\,1-q_B)\ \text{ on two points if }|X_B|\ge2,\qquad
+\widehat\mu_B=(1)\ \text{ if }|X_B|=1.
+\]
+Its reference law is \(\widehat\pi=\sum_B w_B\widehat\mu_B\). It has at most
+\(2|\mathcal B|\) states, whatever the sizes of the original blocks.
+
+\begin{lemma}[Closure under composition]\label{br:lem:closure}
+Let \(K\) and \(K'\) be block-reset chains on the same blocks and block laws,
+with coefficients \((a,M)\) and \((a',M')\). Then \(KK'\) is a block-reset
+chain on the same blocks and laws, with
+\[
+a''_B=a_Ba'_B,\qquad
+M''_{BD}=a_BM'_{BD}+M_{BD}a'_D+\sum_C M_{BC}M'_{CD}.
+\]
+These coefficients do not involve the laws \(\mu_B\), so collapsing commutes
+with composition: \(\widehat{KK'}=\widehat K\,\widehat{K'}\).
+\end{lemma}
+\begin{proof}
+For \(x\in X_B\),
+\(\mu_CK'=a'_C\mu_C+\sum_D M'_{CD}\mu_D\). Substituting this into
+\(KK'(x,\cdot)=a_BK'(x,\cdot)+\sum_C M_{BC}\,\mu_CK'\) gives the stated
+coefficients.
+\end{proof}
+
+\noindent\textit{In words.} Running two block-reset steps in a row is again a
+block-reset step, so every power of a chain in the class is in the class.
+
+\subsection{Power sums at fixed arithmetic and geometric means}
+
+For \(0<w<1\), \(0<g<1\) and \(p>0\), let \(a<b\) be the two positive values
+with \((1-w)a+wb=1\) and \(a^{1-w}b^w=g\), and put
+\(\Psi_p(w)=(1-w)a^p+wb^p\), exactly as in Lemma \ref{lem:weight}.
+(Existence and uniqueness of \(a<b\) is shown in the proof of that lemma
+and does not use \(p\).) Here \(b\) is the larger value and \(w\) its
+weight.
+
+\begin{lemma}[Weight monotonicity for every exponent]\label{br:lem:weight}
+Fix \(0<g<1\). The function \(w\mapsto \Psi_p(w)\) on \((0,1)\) is strictly
+decreasing if \(p>1\), strictly increasing if \(0<p<1\), and constant equal
+to \(1\) if \(p=1\).
+\end{lemma}
+\begin{proof}
+The case \(p=1\) is the constraint itself. Let \(p\ne1\), \(r=b/a>1\), and
+write primes for derivatives in \(w\) at fixed \(g\). Put
+\(\xi_1=(1-w)a'\) and \(\xi_2=wb'\) (called \(A\) and \(B\) in Lemma
+\ref{lem:weight}). Differentiating the two constraints gives
+\[
+\xi_1+\xi_2=a-b,\qquad \frac{\xi_1}a+\frac{\xi_2}b=-\log r .
+\]
+Solving this linear system,
+\[
+\xi_2=-\frac{b\,(r-1-\log r)}{r-1},\qquad
+\xi_1=\frac{a\,(r-1-r\log r)}{r-1}.
+\]
+Hence
+\[
+\Psi_p'(w)=b^p-a^p+p\big(a^{p-1}\xi_1+b^{p-1}\xi_2\big)
+=\frac{a^p}{r-1}\Big[p\log r\,(r^p-r)-(p-1)(r-1)(r^p-1)\Big],
+\]
+which is \eqref{eq:weightderivative}; the elimination holds for every real
+\(p\). Put \(I_1=\int_1^r t^{p-1}dt\) and \(I_0=\int_1^r t^{p-2}dt\), so that
+\(r^p-1=pI_1\) and \(r^p-r=(p-1)rI_0\). The bracket equals
+\[
+p(p-1)\big[r\log r\,I_0-(r-1)I_1\big].
+\]
+Let \(\sigma\) be the measure \(dt/t\) on \([1,r]\) and, for real \(s\), let
+\(\ell(s)=\int t^{s+1}d\sigma\big/\!\int t^{s}d\sigma\), the mean of \(t\) under the
+law proportional to \(t^s\,d\sigma\). Then \(\log\ell\) has derivative
+\(\E_{s+1}\log t-\E_s\log t\), and \(s\mapsto \E_s\log t\) is strictly
+increasing because its derivative is the variance of \(\log t\) under the
+tilted law. Hence \(\ell\) is strictly increasing. Now
+\(I_1/I_0=\ell(p-1)\) and \(\ell(-1)=\log r/(1-1/r)=r\log r/(r-1)\). As \(p>0\),
+\(\ell(p-1)>\ell(-1)\), that is \((r-1)I_1>r\log r\,I_0\). The square bracket is
+therefore negative, and the sign of \(\Psi_p'\) is the sign of \(-p(p-1)\).
+\end{proof}
+
+\noindent\textit{In words.} With both means held fixed, a power above one
+prefers the large value to sit on as little mass as possible, and a power
+below one prefers the small value to sit on as little mass as possible.
+
+\begin{lemma}[Maximal power sum at fixed means]\label{br:lem:key}
+Let \(\mu\) be a full-support law on a finite set with at least two points,
+\(q=\min\mu\), \(p>0\), \(p\ne1\) and \(0<g<1\). Put
+\[
+S_p(\mu,g)=\sup\{\E_\mu y^p:\ y>0,\ \E_\mu y=1,\ G_\mu(y)=g\},
+\qquad G_\mu(y)=\textstyle\prod_i y_i^{\mu_i}.
+\]
+Then the supremum is attained and
+\[
+S_p(\mu,g)=\begin{cases}\Psi_p(q),&p>1,\\ \Psi_p(1-q),&0<p<1.\end{cases}
+\]
+Every maximiser takes exactly two values. For \(p>1\), the larger value
+occurs at exactly one coordinate; for \(0<p<1\), the smaller value occurs at
+exactly one coordinate. In both cases that coordinate has mass \(q\).
+In particular \(S_p(\mu,g)\) depends on \(\mu\) only through \(q\), and
+\(S_p(\mu,g)=S_p((q,1-q),g)\). Trivially \(S_1(\mu,g)=1\), and at \(g=1\) the
+only feasible vector is \(y\equiv1\).
+\end{lemma}
+\begin{proof}
+\emph{Compactness.} On the feasible set \(F\), \(y_i\le1/\mu_i\), and
+\(y_j^{\mu_j}=g\prod_{i\ne j}y_i^{-\mu_i}\ge g\prod_{i\ne j}\mu_i^{\mu_i}\).
+So \(F\) is a closed subset of a compact box in \((0,\infty)^X\); the
+continuous objective attains its maximum.
+
+\emph{Stationarity.} The constraint gradients are \((\mu_i)\) and
+\((g\mu_i/y_i)\). They are linearly dependent only if \(y\) is constant,
+which forces \(g=1\). Hence \(F\) is a smooth submanifold of codimension two
+near every point, and a maximiser satisfies
+\(p\mu_iy_i^{p-1}=\kappa_1\mu_i+\kappa_2 g\mu_i/y_i\) for some multipliers
+\(\kappa_1,\kappa_2\). With \(C=\kappa_2 g\), every coordinate is a positive zero of
+\[
+\phi(t)=pt^p-\kappa_1 t-C .
+\]
+As \(y\) is not constant, \(\phi\) has at least two positive zeros. If
+\(p>1\), \(\phi\) is strictly convex with \(\phi(0)=-C\); a strictly convex
+function with \(\phi(0)\le0\) has at most one positive zero, so \(C<0\). If
+\(0<p<1\), \(\phi\) is strictly concave and the same argument gives \(C>0\).
+A strictly convex or concave function has at most two zeros, so \(y\) takes
+exactly two values \(x<z\).
+
+\emph{One distinguished coordinate.} Put \(\psi(t)=\phi(t)/t\) and
+\(Q(t)=p(p-1)t^p+C\), so that \(\psi'(t)=Q(t)/t^2\). If \(p>1\), \(Q\)
+increases strictly from \(C<0\) to \(+\infty\); if \(p<1\), it decreases
+strictly from \(C>0\) to \(-\infty\). Either way \(Q\) has one zero \(t_0\),
+\(\psi\) is strictly monotone on each side of \(t_0\), and
+\(\psi(x)=\psi(z)=0\) forces \(x<t_0<z\). Consequently \(Q(z)>0\) if \(p>1\),
+and \(Q(x)>0\) if \(p<1\). Call that value \(v_*\) (\(z\) or \(x\)).
+
+Suppose two coordinates \(i\ne j\) both equal \(v_*\). Take
+\(h=e_i/\mu_i-e_j/\mu_j\). Then \(\sum_k\mu_kh_k=0\) and
+\(\sum_k\mu_kh_k/y_k=0\), so \(h\) is tangent to \(F\). With the Lagrangian
+\(L=\E_\mu y^p-\kappa_1\E_\mu y-\kappa_2 G_\mu(y)\), and
+\(h^{\mathsf T}\nabla^2G_\mu h=G_\mu\big[(\sum\mu_kh_k/y_k)^2-\sum\mu_kh_k^2/y_k^2\big]\),
+\[
+h^{\mathsf T}\nabla^2L\,h
+=\sum_k\mu_kh_k^2\Big(p(p-1)y_k^{p-2}+\frac C{y_k^2}\Big)
+=\frac{Q(v_*)}{v_*^2}\sum_k\mu_kh_k^2>0 .
+\]
+This violates the second-order necessary condition for a local maximum on a
+smooth constraint manifold. (Here \(|X|\ge3\), since the other value also
+occurs, so the manifold has positive dimension.) Hence \(v_*\) occurs at
+exactly one coordinate \(i\).
+
+\emph{Which coordinate.} If \(p>1\), the maximiser is the two-valued vector
+with its high value at \(i\), and its value is \(\Psi_p(\mu_i)\). If \(p<1\),
+the high value has weight \(1-\mu_i\) and the value is \(\Psi_p(1-\mu_i)\). By
+Lemma \ref{br:lem:weight}, both are at most the value at \(\mu_i=q\), with
+equality only when \(\mu_i=q\); the vector built on a rarest atom is
+feasible. For a two-point law the two-valued form is automatic and the same
+comparison applies.
+\end{proof}
+
+\noindent\textit{In words.} Among positive vectors with prescribed
+arithmetic and geometric means, the largest power sum is always obtained by
+making one rarest coordinate different from the rest; which way it differs
+depends only on whether the power is above or below one.
+
+\subsection{The reduction}
+
+\begin{theorem}[Block-reset reduction]\label{br:thm:reduction}
+Let \(K\) be a block-reset chain \eqref{br:eq:K} with reference
+\(\pi=\sum_Bw_B\mu_B\) and \(w'_C>0\) for all \(C\). For every \(c>0\),
+\[
+\etaKL(\pi,K)\le c\iff\etaKL(\widehat\pi,\widehat K)\le c .
+\]
+Consequently
+\begin{equation}\label{br:eq:main}
+\etaKL(\pi,K)=\etaKL(\widehat\pi,\widehat K).
+\end{equation}
+The coefficient depends on the block laws only through which blocks are singletons
+and through their minimum masses \(q_B\). Moreover, lifting an
+input \(\widehat v\) of \(\widehat K\) by placing its rare-point mass of
+block \(B\) on one rarest atom of \(\mu_B\), and its other mass of block \(B\)
+proportionally to \(\mu_B\) on the remaining atoms, preserves both divergences.
+Hence every extremiser of \(\widehat K\) lifts to an extremiser of \(K\).
+\end{theorem}
+
+\begin{proof}
+Both \(\pi\) and \(\lambda\) have full support, and so do \(\widehat\pi\)
+and \(\widehat\lambda\), whose block weights are again \(w_B\) and
+\(w'_C\). Lemma \ref{lem:duality} therefore applies to both chains.
+
+Let \(f\) be real on \(X\), \(y=e^f\), and let \(y_B\) be the restriction of
+\(y\) to \(X_B\). Write \(A_B=\E_{\mu_B}y_B\) and \(G_B=G_{\mu_B}(y_B)\).
+Since \(\E_{\mu_C}f=\log G_C\), for \(x\in X_B\),
+\[
+Kf(x)=a_Bf(x)+\sum_CM_{BC}\log G_C .
+\]
+With \(p_B=a_B/c\ge0\) and \(\Gamma_B=\prod_CG_C^{M_{BC}/c}>0\), the dual
+criterion \eqref{eq:duality} reads
+\begin{equation}\label{br:eq:dual}
+\Big(\sum_Bw_B\,\Gamma_B\,\E_{\mu_B}\big[y_B^{\,p_B}\big]\Big)^{c}
+\le\sum_Cw'_C\,A_C\qquad\text{for all }y>0 .
+\end{equation}
+The right side and every \(\Gamma_B\) depend on \(y\) only through the
+numbers \((A_B,G_B)_B\). The set of \(y\) with prescribed numbers is a
+product over blocks. The left side is continuous and increasing in each
+\(\E_{\mu_B}[y_B^{p_B}]\), because \(w_B\Gamma_B>0\). Hence
+\eqref{br:eq:dual} is equivalent to the same inequality with
+\(\E_{\mu_B}[y_B^{p_B}]\) replaced by
+\[
+\sup\{\E_{\mu_B}u^{p_B}:\ u>0,\ \E_{\mu_B}u=A_B,\ G_{\mu_B}(u)=G_B\}
+=A_B^{p_B}\,S_{p_B}(\mu_B,G_B/A_B),
+\]
+for every admissible family \((A_B,G_B)_B\). For a block of size one,
+\(G_B=A_B\) and the supremum is \(A_B^{p_B}\). For a block of size at least
+two, the admissible pairs are \(0<G_B\le A_B\), and by Lemma
+\ref{br:lem:key} (with the trivial cases \(p_B\in\{0,1\}\) or \(G_B=A_B\)) the
+supremum depends only on \(q_B\), \(p_B\), \(A_B\) and \(G_B\). The collapsed
+chain has the same weights, the same coefficients, the same admissible
+pairs, and block laws with the same minima. So the reduced inequality, and
+hence \eqref{br:eq:dual}, holds for \(K\) exactly when it holds for
+\(\widehat K\). This proves the equivalence for each \(c>0\), and
+\eqref{br:eq:main} follows by taking the infimum over admissible \(c\).
+
+For the lift \(v\) of \(\widehat v\), on the non-rarest atoms of block \(B\)
+the input \(v\) is proportional to \(\mu_B\), and so is the reference
+\(\pi\). The output \(vK\) on the corresponding atoms of block \(C\) is
+\(a_Cv+\big(\sum_BM_{BC}v(X_B)\big)\mu_C\), again proportional to \(\mu_C\),
+as is \(\lambda\). Grouping these atoms therefore loses no divergence, and
+the grouped laws are exactly \(\widehat v\), \(\widehat\pi\),
+\(\widehat v\widehat K\) and \(\widehat\lambda\). Both divergences agree,
+so the ratios agree; with \eqref{br:eq:main}, extremisers lift.
+\end{proof}
+
+\noindent\textit{In words.} For any chain that either stays put or jumps to a
+fresh sample from some block law, the worst-case one-step entropy
+contraction is the same as for a chain with at most two states per block,
+and only the rarest point of each block matters.
+
+\begin{remark}[No restriction on the laziness]\label{br:rem:norestriction}
+No restriction on the laziness is needed: when some exponent
+\(p_B=a_B/c\) is below one, Lemma \ref{br:lem:key} still applies, with a
+single \emph{low} coordinate at a rarest atom.
+This matters: for \(P_s\) below (\(s<1/4\)) one has
+\(\etaKL\ge(1-2s)^2>s\), so the coefficient exceeds every stay
+probability. Numerically, \(20\) of the \(24\) random chains tested by
+\texttt{verification/extension\_checks.py} have a reported coefficient above
+their smallest positive stay probability, and the full and collapsed
+numerical estimates agree in all \(24\) to within \(10^{-15}\). The theorem does not assert that every extremiser of
+\(K\) is a lift, nor does it cover cross weights that are not of the
+rank-one block form \eqref{br:eq:K}; for such weights the minimum masses
+alone cannot determine the coefficient.
+\end{remark}
+
+\subsection{Consequences}
+
+Throughout, for laws \(\mu\) on a part \(A\) and \(\nu\) on a part \(B\),
+and \(s\in[0,1]\), let \(P_s\) be the \emph{\(s\)-lazy bipartite reset chain}:
+it stays put with probability \(s\) and otherwise samples the opposite part,
+\[
+P_s(a,a)=s,\ \ P_s(a,b)=(1-s)\nu_b;\qquad
+P_s(b,b)=s,\ \ P_s(b,a)=(1-s)\mu_a .
+\]
+Its stationary law is \(\pi=(\mu/2,\nu/2)\), and \(P_{1/2}\) is the chain
+\eqref{eq:weightedP}. It is block-reset with \(a_A=a_B=s\),
+\(M_{AB}=M_{BA}=1-s\), \(M_{AA}=M_{BB}=0\).
+
+\begin{corollary}[Four-state reductions]\label{br:cor:four}
+For every \(s\in[0,1]\) and every \(k\ge1\), the coefficient
+\(\etaKL(\pi,P_s^k)\) equals that of the collapsed chain with the same
+coefficients on at most four states: four when both parts are
+non-singletons, three when exactly one is a singleton, and two when both
+are singletons. Each non-singleton part law \(\mu\) is replaced by
+\((q_\mu,1-q_\mu)\), while each singleton is retained. In the block form,
+\(P_s^k\) stays with probability \(s^k\) and otherwise resets to its own part
+or to the other part. For \(s=1/2\),
+\begin{equation}\label{br:eq:powers}
+P_{1/2}^k=\Pi+2^{-k}(I-Q),
+\end{equation}
+where \(\Pi\) resets to \(\pi\) and \(Q\) resets within the current part, and
+\[
+\etaKL(\pi,P_{1/2}^k)\le\Big(\frac{\log(1/q)}{2\log(2/q)}\Big)^{k},
+\qquad q=\min\{q_\mu,q_\nu\}.
+\]
+\end{corollary}
+\begin{proof}
+Lemma \ref{br:lem:closure} and Theorem \ref{br:thm:reduction}. For
+\eqref{br:eq:powers}, write \(J\) for the cross reset, so \(J^2=Q\),
+\(QJ=JQ=J\), and \(\Pi=(J+Q)/2\). Then \(P_{1/2}=(I+J)/2\) and induction gives
+\(P_{1/2}^{k+1}=\tfrac12(\Pi+2^{-k}(I-Q))(I+J)
+=\Pi+2^{-k-1}(I-Q)\), using \(\Pi J=\Pi\) and \((I-Q)J=0\). The bound follows
+from the chain rule \(\etaKL(\pi,K_1K_2)\le\etaKL(\pi,K_1)\,\etaKL(\pi K_1,K_2)\),
+stationarity of \(\pi\), and Theorem \ref{thm:bipartite}.
+\end{proof}
+
+\noindent\textit{In words.} Any laziness, and any number of steps, on a
+two-part reset chain is captured exactly by a chain with at most four states.
+
+\begin{remark}[Consistency with Theorem \ref{thm:bipartite}]\label{br:rem:thm61}
+At \(s=1/2\), Corollary \ref{br:cor:four} says that Theorem
+\ref{thm:bipartite} for arbitrary part laws follows from its case of
+two-point parts. It is a consistency check rather than a new proof: the
+four-state value still has to be computed, and Theorem \ref{thm:bipartite}
+says more, namely that only \(\min\{q_\mu,q_\nu\}\) matters at this
+laziness. Numerically, full chains with parts \((0.1,0.2,0.7),(0.3,0.7)\),
+\((0.2,0.3,0.5),(0.15,0.25,0.6)\) and uniform \(K_{3,3}\) reproduce
+\eqref{eq:bipartite} to \(10^{-15}\).
+\end{remark}
+
+\begin{remark}[The lazy star at any laziness]\label{br:cor:star}
+For the star with \(n\ge3\) vertices (one singleton part, the centre, and
+leaves with uniform law) and any laziness \(s\in[0,1]\), Corollary
+\ref{br:cor:four} shows that the coefficient equals that of the three-state
+chain with leaf law \((1/(n-1),\,1-1/(n-1))\). For \(s=1/2\) see
+Corollary \ref{cor:star}, which gives the value and the extremisers.
+\end{remark}
+
+\begin{corollary}[Complete multipartite graphs]\label{br:cor:multi}
+Let \(G\) be the complete multipartite graph with \(r\ge2\) parts of sizes
+\(n_1,\dots,n_r\), \(N=\sum_in_i\), and let \(P\) stay put with probability
+\(s\) and otherwise move to a uniform neighbour. With its stationary law
+\(\pi\propto\) degree, \(\etaKL(\pi,P)\) equals the coefficient of the
+block-reset chain on at most \(2r\) states with part laws
+\((1/n_i,1-1/n_i)\) (a single state when \(n_i=1\)), stay probability \(s\),
+reset coefficients \(M_{ij}=(1-s)n_j/(N-n_i)\) for \(j\ne i\), and block
+weights \(w_i\propto n_i(N-n_i)\).
+\end{corollary}
+\begin{proof}
+From a vertex of part \(i\), the walk moves to part \(j\ne i\) with
+probability \((1-s)n_j/(N-n_i)\) and then to a uniform vertex of that part;
+the degree of every vertex of part \(i\) is \(N-n_i\). Apply Theorem
+\ref{br:thm:reduction}.
+\end{proof}
+
+\noindent\textit{In words.} A walk on a complete multipartite graph has the
+same one-step entropy contraction as a walk on two states per part.
+
+\subsection{Where point inputs stop being optimal}
+
+The following two facts are proved; the window they bound is then described
+numerically. For \(s\in[0,1)\) and a vertex \(x\) of conditional mass
+\(\rho_x\), the point ratio of \(P_s\) is
+\[
+c_0(\rho_x,s)=\frac{s\log(2s/\rho_x)+(1-s)\log(2(1-s))}{\log(2/\rho_x)}
+=s-\frac{h(s)-(1-s)\log2}{\log(2/\rho_x)},
+\]
+with \(h(s)=-s\log s-(1-s)\log(1-s)\). For \(s\in[1/2,1)\),
+\(h(s)\ge2(1-s)\log2>(1-s)\log2\) by concavity of \(h\), so the largest
+point ratio is at a vertex of the smallest conditional mass
+\(q=\min\{q_\mu,q_\nu\}\).
+
+\begin{proposition}[Two obstructions to point optimality]\label{br:prop:edges}
+\begin{enumerate}[label=(\roman*)]
+\item Assume the part containing a rarest vertex has at least two vertices.
+If \(1/2\le s<1\) and \(c_0(q,s)>(1-s)(1-q)\), then
+\(\etaKL(\pi,P_s)>c_0(q,s)\); no point input is an extremiser.
+\item If \((1-2s)^2>\max_xc_0(\rho_x,s)\), then
+\(\etaKL(\pi,P_s)\ge(1-2s)^2\) exceeds every point ratio, so again no point
+input is an extremiser.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+(i) Let \(a\) be a rarest vertex, in part \(A\), and \(b\) any vertex of the
+other part. Put \(v_\epsilon=(1-\epsilon)\delta_a+\epsilon\delta_b\). Its
+output gives mass \(\epsilon(1-s)\mu_j\) to each \(j\in A\setminus\{a\}\),
+which the point output does not charge; every other output coordinate is a
+smooth function of \(\epsilon\) and positive at \(\epsilon=0\). Hence
+\[
+\KL(v_\epsilon P_s\|\pi)=\KL(\delta_aP_s\|\pi)
++(1-s)(1-q)\,\epsilon\log\epsilon+O(\epsilon),\qquad
+\KL(v_\epsilon\|\pi)=\log(2/q)+\epsilon\log\epsilon+O(\epsilon).
+\]
+The output divergence minus \(c_0(q,s)\) times the input divergence is
+\(\big((1-s)(1-q)-c_0(q,s)\big)\epsilon\log\epsilon+O(\epsilon)\), which is
+positive for small \(\epsilon>0\) under the hypothesis. Since \(c_0(q,s)\)
+is the largest point ratio, no point input is optimal. This is the argument
+of \eqref{eq:perturb}.
+
+(ii) The chain is reversible with respect to \(\pi\), and
+\(\phi=\one_A-\one_B\) has \(\E_\pi\phi=0\) and \(P_s\phi=(2s-1)\phi\).
+For \(v_t=\pi(1+t\phi)\), reversibility gives
+\(v_tP_s=\pi(1+t(2s-1)\phi)\). Expanding both divergences to second order,
+\(\KL(v_tP_s\|\pi)/\KL(v_t\|\pi)\to(2s-1)^2\) as \(t\to0\).
+\end{proof}
+
+\noindent\textit{In words.} Laziness a little above one half, or well below
+it, makes some spread-out starting law worse than every single vertex.
+
+For uniform parts, \(q=1/n\), the root \(s_+(n)\) of
+\(c_0(q,s)=(1-s)(1-q)\) above \(1/2\) is \(1/2\) for \(n=2\) and
+\(0.52054\), \(0.52885\), \(0.53307\), \(0.53877\), \(0.53228\) for
+\(n=3,4,5,10,100\) (computed by root finding); the crossing \(s_-(n)\) of \(c_0\) with \((1-2s)^2\) is
+\(0.26836\), \(0.26204\), \(0.25967\), \(0.25839\), \(0.25595\), \(0.25302\)
+for \(n=2,3,4,5,10,100\). The upper edge \(s_+(n)\) is not monotone in
+\(n\): it peaks near \(n=10\) and then decreases towards \(1/2\).
+At \(n=3\) and \(220\)-digit precision, the perturbation in (i) with
+\(\epsilon=10^{-200}\) gains \(1.3\times10^{-200}\) at \(s=0.525\) and loses
+\(2.1\times10^{-200}\) at \(s=0.515\), as (i) predicts.
+
+\begin{remark}[Numerical observations, not proved]\label{br:rem:numerics}
+We report the largest value among point-input evaluations, multistart
+numerical searches, and the local spectral lower bound. Accepted
+optimisation candidates are reevaluated at \(40\)-digit working precision.
+Local spectral values may be limiting values rather than values attained at
+a nonreference input. These calculations provide numerical evidence, without
+certified error bounds or certified global optimality. They were produced by
+\texttt{verification/extension\_checks.py} and cross-checked on the full
+chains.
+\begin{enumerate}[label=(\alph*)]
+\item \emph{Laziness window on \(K_{n,n}\)} (\(n\in\{2,3,4,5,10,100\}\),
+\(s\in[0.20,0.70]\) in steps of \(0.01\)). For \(s<1/2\) the reported numerical estimate
+agrees with \(\max\{c_0(1/n,s),(1-2s)^2\}\) to \(10^{-15}\) at every grid
+point; no improvement over the point ratio larger than \(10^{-9}\) is found at
+any grid point from the first one above \(s_-(n)\) up to \(1/2\).
+Above \(1/2\), the first grid point with an improvement above \(10^{-9}\)
+is \(0.51,0.53,0.54,0.55,0.55,0.55\) for \(n=2,3,4,5,10,100\), and every
+later grid point also shows one. For \(n=2,3\) this is the first grid point
+above \(s_+(n)\), consistent with point optimality on exactly
+\([s_-(n),s_+(n)]\). For larger \(n\) it lies one or two grid steps above
+\(s_+(n)\): just above \(s_+(n)\) the gain from (i) is of
+\(\epsilon\log\epsilon\) type with extremely small \(\epsilon\) and is
+invisible in double precision, so there the grid detects failure only from
+outside and Proposition \ref{br:prop:edges}(i) is the sharper statement. For
+\(n=2\) the grid values above \(1/2\) agree with \(s^2\).
+Full six- and eight-state chains agree with the four-state values to
+\(10^{-15}\), for example \(0.340916\) versus point \(0.340026\) at
+\((n,s)=(3,0.55)\) and \(0.389576\) versus \(0.379126\) at \((3,0.6)\).
+\item \emph{Powers at \(s=1/2\).} Point inputs are not optimal for
+\(P_{1/2}^2\) and \(P_{1/2}^3\):
+\(\etaKL\approx0.0721278\) (point \(0.0644755\)) and \(0.0185000\)
+(point \(0.0164340\)) for \(n=3\); \(0.0886389\) (point \(0.0829304\)) and
+\(0.0242136\) (point \(0.0227244\)) for \(n=5\). The best input found on four states
+for \(n=3,k=2\) lifts to a full-support input of \(K_{3,3}\). All values are
+below the bound in Corollary \ref{br:cor:four}.
+\item \emph{Complete multipartite graphs at \(s=1/2\).} Unlike the bipartite
+case, point inputs fail to be optimal in every tested example:
+\(K_{2,3,4}\): \(0.310885\) versus point \(0.308287\);
+\(K_{3,3,3}\): \(0.286790\) versus \(0.276803\);
+\(K_{1,2,3}\): \(0.288081\) versus \(0.285553\);
+\(K_{2,2,2,3}\): \(0.289083\) versus \(0.276421\).
+Full and collapsed chains agree to \(10^{-15}\).
+\end{enumerate}
+An analytic description of the window \([s_-(n),s_+(n)]\), and closed forms
+for powers and for multipartite graphs, are left open. The reductions above
+turn each into a fixed small-dimensional problem.
+\end{remark}

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/+1Z6n+sWYJ8CkPApank3vUwSeQc</id>
+  <title>arXiv Query: search_query=&amp;id_list=2005.05444&amp;start=0&amp;max_results=10</title>
+  <updated>2026-11-03T13:26:53Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2005.05444" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2005.05444v2</id>
+    <title>Non-linear Log-Sobolev inequalities for the Potts semigroup and applications to reconstruction problems</title>
+    <updated>2022-12-02T14:12:10Z</updated>
+    <link href="https://arxiv.org/abs/2005.05444v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2005.05444v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Consider the semigroup of random walk on a complete graph, which we call the Potts semigroup. Diaconis and Saloff-Coste computed the maximum of the ratio of the relative entropy and the Dirichlet form obtaining the constant $α_2$ in the $2$-log-Sobolev inequality ($2$-LSI). In this paper, we obtain the best possible non-linear inequality relating entropy and the Dirichlet form (i.e., $p$-NLSI, $p\ge1$). As an example, we show $α_1 = 1+\frac{1+o(1)}{\log k}$.
+  By integrating the $1$-NLSI we obtain the new strong data processing inequality (SDPI), which in turn allows us to improve results of Mossel and Peres on reconstruction thresholds for Potts models on trees. A special case is the problem of reconstructing color of the root of a $k$-colored tree given knowledge of colors of all the leaves. We show that to have a non-trivial reconstruction probability the branching number of the tree should be at least $$\frac{\log k}{\log k - \log(k-1)} = (1-o(1))k\log k.$$ This recovers previous results (of Sly and Bhatnagar et al.) in (slightly) more generality, but more importantly avoids the need for any coloring-specialized arguments. Similarly, we improve the state-of-the-art on the weak recovery threshold for the stochastic block model with $k$ balanced groups, for all $k\ge 3$. To further show the power of our method, we prove optimal non-reconstruction results for a broadcasting on trees model with Gaussian kernels, closing a gap left open by Eldan et al. These improvements advocate information-theoretic methods as a useful complement to the conventional techniques originating from the statistical physics.</summary>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.PR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-05-11T21:29:08Z</published>
+    <arxiv:primary_category term="cs.IT"/>
+    <author>
+      <name>Yuzhou Gu</name>
+    </author>
+    <author>
+      <name>Yury Polyanskiy</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,56 @@
+# SPDX-License-Identifier: MIT
+name: Replay
+on:
+  push:
+  pull_request:
+jobs:
+  quick:
+    name: Quick checks (blocking)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check MANIFEST.sha256
+        run: sha256sum -c MANIFEST.sha256
+      - name: prepare_fingerprints.py (standard library; outputs byte-identical to fingerprints.json and target.yaml)
+        run: |
+          python -I -B prepare_fingerprints.py --output-dir "$RUNNER_TEMP/fp"
+          cmp "$RUNNER_TEMP/fp/fingerprints.json" fingerprints.json
+          cmp "$RUNNER_TEMP/fp/target.yaml" target.yaml
+          python -I -B -O prepare_fingerprints.py --output-dir "$RUNNER_TEMP/fpO"
+          cmp "$RUNNER_TEMP/fpO/fingerprints.json" fingerprints.json
+      - name: Install pinned NumPy, SciPy, mpmath
+        run: python -m pip install -r requirements.txt
+      - name: validate_entropy.py and verify_minimum_mass.py, normal and -O (each exits 1 if any gate fails; no assert)
+        run: |
+          python -I -B verification/validate_entropy.py --output-dir "$RUNNER_TEMP/ve"
+          python -I -B -O verification/validate_entropy.py --output-dir "$RUNNER_TEMP/veO"
+          python -I -B verification/verify_minimum_mass.py --output-dir "$RUNNER_TEMP/mm"
+          python -I -B -O verification/verify_minimum_mass.py --output-dir "$RUNNER_TEMP/mmO"
+      - name: Working tree unchanged
+        run: test -z "$(git status --porcelain)"
+  slow:
+    name: Negative controls and extension checks (non-blocking)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    continue-on-error: true
+    env:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install pinned NumPy, SciPy, mpmath
+        run: python -m pip install -r requirements.txt
+      - name: negative_controls.py and extension_checks.py under -O (each exits 1 if a gate fails or a control goes undetected)
+        run: |
+          python -I -B -O verification/negative_controls.py --output-dir "$RUNNER_TEMP/nc"
+          python -I -B -O verification/extension_checks.py --output-dir "$RUNNER_TEMP/ext"

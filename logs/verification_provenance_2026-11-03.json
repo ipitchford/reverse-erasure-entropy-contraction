@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-03",
+  "round": "final fix round",
+  "mathematical_track": "informal, no proof assistant; internal AI-assisted review only; no human peer review",
+  "script_runs": {
+    "command": "uv run --with numpy --with scipy --with mpmath python3 -I -B [-O] verification/<script>.py --output-dir verification/results/2026-11-03/<script>/<mode>",
+    "working_directory": "scratch directory outside the package",
+    "modes": ["standard", "optimize_O (python -O)"],
+    "validate_entropy.py": {"sha256": "8fac29ce470edefddb963cf5c6dffd8b16fe77c28e07c1443de7662aeac1b347", "exit_status": [0, 0], "gates": 101},
+    "verify_minimum_mass.py": {"sha256": "69bfd43a74414c175f9f86f923d799bc7515a594c4d679424d33241e860a4a53", "exit_status": [0, 0], "envelope_cases": {"informative": 143, "vacuous": 111, "vertex_limited": 2}},
+    "negative_controls.py": {"sha256": "61a88a9f73090f984c30f6c8296dab2f5f143f8ca73e11fc4116fa7b432f3c83", "exit_status": [0, 0], "gates": 56},
+    "extension_checks.py": {"sha256": "d3a3677492503a9c2338c872b886d4aa574c97477b4bfc75415bbb6873c2471e", "exit_status": [0, 0], "checks": 122, "negative_controls": 5},
+    "standard_vs_O": "outputs identical apart from elapsed time and optimisation flag for all four scripts"
+  },
+  "fingerprints": "prepare_fingerprints.py --output-dir <scratch> reproduces fingerprints.json and target.yaml byte for byte",
+  "pdf_build": "scratch copy: pdflatex, bibtex (plainnat), pdflatex, pdflatex (TinyTeX, TeX Live 2023); no warnings, overfull/underfull boxes or undefined references; 27 pages",
+  "visual_inspection": "all 27 pages rendered with pdftoppm at 80 dpi and inspected",
+  "references": "every entry transcribed from raw records saved in refs_records/",
+  "no_external_action": "No submission, publication or author contact performed"
+}
