@@ -1,6 +1,6 @@
 # AI_INDEX: entropy contraction via reverse erasure
 
-Machine- and human-readable index of this package. Paths are relative to the package root. Revised 3 November 2026.
+Machine- and human-readable index of this package. Paths are relative to the package root. Version 0.1.1-candidate, revised 11 November 2026 (abstract wording correction; see `CORRECTIONS.md`).
 Status: unrefereed research candidate; internal AI-assisted review only; no human peer review; no formal proof.
 
 ## Claims (where stated, where proved, how checked)
@@ -67,7 +67,8 @@ Gao's weighted mean inequality (Lemma 4.1; Gao 2003, 2009); the uniform binary c
 - [`logs/`](logs/) - LaTeX build logs (local paths shortened) and verification provenance (1 and 3 November).
 - [`original_manifest.json`](original_manifest.json) - hashes of 1 November development inputs and the list of
   changes made for the public package.
-- [`CITATION.cff`](CITATION.cff), [`.zenodo.json`](.zenodo.json) - citation and deposit metadata (DOI 10.5281/zenodo.23921825).
+- [`CITATION.cff`](CITATION.cff), [`.zenodo.json`](.zenodo.json) - citation and deposit metadata (DOI 10.5281/zenodo.24142198; 0.1.0-candidate: 10.5281/zenodo.23921825).
+- [`CORRECTIONS.md`](CORRECTIONS.md) - dated corrections between versions.
 - [`RESEARCH_GATES.json`](RESEARCH_GATES.json) - machine-readable prior-art contribution map, limitation triage and extension scout.
 - [`requirements.txt`](requirements.txt), [`.github/workflows/replay.yml`](.github/workflows/replay.yml) - pinned numerical
   libraries and the CI replay.

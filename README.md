@@ -2,15 +2,15 @@
 
 **Status:** unrefereed research candidate, prepared with AI assistance. Internal AI-assisted review only; no human
 peer review; no formal (proof-assistant) proof. Numerical diagnostics are evidence, not proofs.
-Revised 3 November 2026. Author: Anonymous. Text CC0-1.0, code MIT (see `LICENSE.md`).
+Version 0.1.1-candidate, revised 11 November 2026 (see `CORRECTIONS.md`). Author: Anonymous. Text CC0-1.0, code MIT (see `LICENSE.md`).
 
 ## The result in three sentences
 
 Caputo, Chen, Gu and Polyanskiy conjectured that one step of the half-lazy random walk on the complete bipartite
 graph K_{n,n} keeps at most the fraction log n / (2 log 2n) of relative entropy, with single vertices as the only
 worst starts; they proved n = 3 by computer. This paper proves it for every n (and for K_{m,n}, rank-one weights and
-the lazy star), by noticing that one step of the walk is two copies of the *reverse-erasure* channel: keep the
-symbol with probability alpha, otherwise redraw it from a prior. For that channel the contraction coefficient
+the lazy star), by noticing that one step of the walk is two copies of the *reverse-erasure* channel: a visible
+symbol passes through unchanged and a blank (erased with probability 1 - alpha) is redrawn from a prior. For that channel the contraction coefficient
 depends on the prior only through its rarest symbol, at every alpha, with the closed form
 log(1/q) / log(1/(alpha q)) up to the sharp threshold alpha = q^(q/(1-q)).
 
@@ -92,8 +92,8 @@ pdflatex twice; 27 pages). The figure plots proved formulas only. Build logs (wi
 
 ## How to cite
 
-Anonymous (2026). *Entropy contraction on complete bipartite graphs via reverse erasure: only the rarest symbol matters*. Version 0.1.0-candidate. Unrefereed research candidate. Zenodo.
-https://doi.org/10.5281/zenodo.23921825
+Anonymous (2026). *Entropy contraction on complete bipartite graphs via reverse erasure: only the rarest symbol matters*. Version 0.1.1-candidate. Unrefereed research candidate. Zenodo.
+https://doi.org/10.5281/zenodo.24142198
 
 All versions: https://doi.org/10.5281/zenodo.23921824. Release page: https://evidencepress.org/releases/reverse-erasure-entropy-contraction/.
 Machine-readable citation metadata: `CITATION.cff`.
@@ -101,5 +101,5 @@ Machine-readable citation metadata: `CITATION.cff`.
 ## Boundaries
 
 No paper has been submitted to a journal or sent to an author. This version is deposited on Zenodo with DOI
-[10.5281/zenodo.23921825](https://doi.org/10.5281/zenodo.23921825) (Section 10 of the paper).
+[10.5281/zenodo.24142198](https://doi.org/10.5281/zenodo.24142198) (version 0.1.0-candidate: [10.5281/zenodo.23921825](https://doi.org/10.5281/zenodo.23921825)) (Section 10 of the paper).
 Priority rests on a bounded literature search.

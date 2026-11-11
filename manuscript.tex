@@ -39,7 +39,7 @@
 \title{\textbf{Entropy contraction on complete bipartite graphs\\
 via reverse erasure: only the rarest symbol matters}}
 \author{Anonymous}
-\date{Revised 3 November 2026}
+\date{Version 0.1.1-candidate, revised 11 November 2026}
 
 \begin{document}
 \maketitle
@@ -52,9 +52,10 @@ as the only worst starting points. They proved the case \(n=3\) with
 computer assistance. We prove the conjecture for every \(n\), and for
 \(K_{m,n}\) with \(M=\max(m,n)\) in place of \(n\). The key observation is
 that one step of this walk splits into two copies of a simple channel, the
-Bayesian reverse of an erasure channel: keep the current symbol with
-probability \(\alpha\), otherwise replace it by a fresh draw from a prior
-\(\rho\). For this channel we show that the relative-entropy contraction
+Bayesian reverse of an erasure channel: a visible symbol passes through
+unchanged and a blank is replaced by a fresh draw from a prior \(\rho\),
+where the forward erasure channel keeps each symbol with probability
+\(\alpha\). For this channel we show that the relative-entropy contraction
 coefficient depends on the prior only through its smallest atom \(q\), at
 every retention probability. Up to the sharp threshold
 \(\alpha=q^{q/(1-q)}\) the coefficient is \(\log(1/q)/\log(1/(\alpha q))\),
@@ -140,7 +141,7 @@ walker on side \(A\) stays where it is; otherwise it leaves, and the walkers
 arriving on side \(A\) from side \(B\) land at a fresh uniform vertex of
 \(A\). So the conditional law on side \(A\) after one step is ``keep the old
 symbol with some probability, otherwise draw a fresh one from the prior''.
-That is the Bayesian reverse of an erasure channel. An erasure channel keeps
+That is an erasure channel followed by its Bayesian reverse. An erasure channel keeps
 a symbol with probability \(\alpha\) and otherwise outputs the blank symbol
 \(e\); its reverse sends a kept symbol to itself and fills a blank with a
 fresh sample. Section~\ref{sec:bipartite} makes this exact: one step of the
@@ -1339,7 +1340,7 @@ laws \cite{ordentlich}.
 
 \section{Research and verification status}\label{sec:status}
 
-\textbf{DOI:} \href{https://doi.org/10.5281/zenodo.23921825}{10.5281/zenodo.23921825} (version 0.1.0-candidate; all versions:
+\textbf{DOI:} \href{https://doi.org/10.5281/zenodo.24142198}{10.5281/zenodo.24142198} (version 0.1.1-candidate; all versions:
 \href{https://doi.org/10.5281/zenodo.23921824}{10.5281/zenodo.23921824}).
 
 \smallskip
@@ -1541,6 +1542,18 @@ threshold proof uses the \(\epsilon\log\epsilon\) term
 (Remark~\ref{rem:excess}).
 
 \bibliographystyle{plainnat}
+\paragraph{Changes in 0.1.1-candidate (11 November 2026).} The abstract of
+0.1.0-candidate described the reverse-erasure channel as ``keep the current
+symbol with probability \(\alpha\), otherwise replace it by a fresh draw
+from a prior \(\rho\)''. That describes the lazy reset kernel
+\(\alpha I+(1-\alpha)\one\rho^{\mathsf T}\) of Remark~2.1(i), not the
+channel \(R_\rho\) of (2.1). The abstract now states the rule of (2.1):
+a visible symbol passes through unchanged and a blank is refilled from
+\(\rho\); \(\alpha\) enters only through the reference input (2.2).
+One sentence of Section~1.3 was tightened in the same way. No definition,
+theorem, proof, number, figure or code changed; version 0.1.0-candidate
+remains archived unchanged at doi:10.5281/zenodo.23921825.
+
 \bibliography{refs}
 
 \end{document}

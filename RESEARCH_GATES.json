@@ -1,6 +1,6 @@
 {
  "schemaVersion": "1.0",
- "provenance": "Compiled 3 November 2026 for release 0.1.0-candidate from the dated prior-art record (novelty_gate_report.md and novelty_audit.md, 1 November 2026, with 3 November addenda), the internal review searches of 3 November 2026 (REVIEW_SUMMARY.md) and the reference retrieval (refs_records/). It documents the scrutiny performed, not historical priority. No new search was run at release preparation.",
+ "provenance": "Compiled 3 November 2026 for release 0.1.0-candidate from the dated prior-art record (novelty_gate_report.md and novelty_audit.md, 1 November 2026, with 3 November addenda), the internal review searches of 3 November 2026 (REVIEW_SUMMARY.md) and the reference retrieval (refs_records/). It documents the scrutiny performed, not historical priority. No new search was run at release preparation. Version 0.1.1-candidate (11 November 2026) corrects only the abstract wording describing the reverse-erasure channel (see CORRECTIONS.md); the gate record is otherwise unchanged and no new search was run.",
  "contributionMap": [
   {
    "claim": "The relative-entropy contraction coefficient of the reverse-erasure channel depends on the prior only through its smallest atom q, at every retention probability alpha (Theorem 2.3), with an exact one-variable criterion (Proposition 2.4).",
